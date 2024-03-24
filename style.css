@@ -12,10 +12,69 @@ body {
   min-width: 320px;
 }
 
+.main {
+  text-align: center;
+}
+.main__cta__title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.main__cta__text {
+  margin-bottom: 28px;
+  line-height: 23px;
+}
+.main__cta__button {
+  border-radius: 40px;
+  color: white;
+  background-color: #08A6E4;
+  border: 0;
+  padding: 1.375em 5.75em;
+}
+.main__image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.main__facts__title {
+  font-size: 1.875em;
+  margin-bottom: 1.56em;
+}
+.main__facts__item {
+  margin-bottom: 1.5em;
+}
+.main__facts__item__svg {
+  margin-bottom: 1em;
+}
+.main__facts__item__svg__elipse1 {
+  transform: translate(40%, 10%);
+}
+.main__facts__item__svg__elipse {
+  transform: translate(50%, 10%);
+  width: 62.71px;
+  height: 62.71px;
+}
+.main__facts__item__svg__person {
+  transform: translate(-15%);
+  width: 44px;
+  height: 52px;
+}
+.main__facts__item__svg__eye {
+  transform: translate(-20%, -30%);
+  width: 61px;
+  height: 33px;
+}
+.main__facts__item__svg__catalog {
+  transform: translate(-7.5%, -7.5%);
+}
+.main__facts__item__number {
+  margin-bottom: 1.18em;
+  font-weight: 800;
+}
+
 .nav {
   width: 100%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   padding: 1em 1.5em;
+  margin-bottom: 100px;
 }
 .nav__logo {
   display: inline-block;
