@@ -183,4 +183,32 @@ body {
   display: none;
 }
 
+.pricing {
+  padding: 3.75rem 2.57rem 3.31rem;
+}
+.pricing__title {
+  font-size: 36px;
+  font-weight: 400;
+}
+.pricing__tier-container__tier {
+  border: 1px solid red;
+  margin-bottom: 30px;
+}
+.pricing__tier-container__tier__left-side {
+  width: 50%;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+.pricing__tier-container__tier__list {
+  display: inline-block;
+  list-style-type: none;
+  padding-top: 1.57rem;
+  padding-bottom: 3.19rem;
+  padding-right: 0.63rem;
+}
+.pricing__tier-container__tier__button {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
