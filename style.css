@@ -206,7 +206,9 @@ body {
 }
 .pricing__tier-container__tier__left-side {
   width: 50%;
+  height: 100%;
   display: inline-block;
+  transform: translateY(-50%);
 }
 .pricing__tier-container__tier__left-side__name {
   font-size: 20px;
