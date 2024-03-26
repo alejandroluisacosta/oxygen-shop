@@ -165,15 +165,21 @@
             </div>
         </section>
         <section class="questions__form">
-            <label for="name" class="questions__form__label">Name</label>
-            <input type="text" id="name" class="questions__form__input">
-            <label for="email" class="questions__form__label">Email</label>
-            <input type="text" id="email" class="questions__form__input">
+            <div class="questions__form__input-container">
+                <label for="name" class="questions__form__input-container__label">Name</label><br>
+                <input type="text" id="name" class="input1 questions__form__input-container__input">
+            </div>
+            <div class="questions__form__input-container">
+                <label for="email" class="questions__form__input-container__label">Email</label><br>
+                <input type="text" id="email" class="input2 questions__form__input-container__input">
+            </div>
             <section class="questions__form__policies">
-                <input type="checkbox" id="policies-check" class="questions__form__policies__check">
-                <p class="questions__form__policies__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
+                <input type="checkbox" id="policies-check" class="questions__form__policies__check" checked>
+                <label class="questions__form__policies__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
             </section>
-            <button class="questions__form__button">Send</button>
+            <div class="questions__form__button-container">
+                <button class="questions__form__button-container__button">Send</button>
+            </div>
         </section>
     </section>
     <footer class="footer">
