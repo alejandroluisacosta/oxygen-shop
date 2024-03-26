@@ -199,16 +199,17 @@ body {
   margin-bottom: 1rem;
 }
 .pricing__tier-container__tier {
+  position: relative;
   border-radius: 18px;
   padding-top: 1.57rem;
   padding-bottom: 1.93rem;
   padding-right: 0.63rem;
+  margin-bottom: 54px;
 }
 .pricing__tier-container__tier__left-side {
   width: 50%;
   height: 100%;
   display: inline-block;
-  transform: translateY(-50%);
 }
 .pricing__tier-container__tier__left-side__name {
   font-size: 20px;
@@ -219,45 +220,55 @@ body {
 .pricing__tier-container__tier__list {
   display: inline-block;
   list-style-type: none;
+  text-align: left;
 }
 .pricing__tier-container__tier__list__item {
   margin-bottom: 20px;
 }
 .pricing__tier-container__tier__button {
+  position: absolute;
   display: block;
   color: white;
   padding: 1rem 3.5rem;
   border: 0;
-  background-color: var(--oxy-red);
   border-radius: 23px;
-  margin-left: 50%;
-  transform: translate(-50%, -65%);
+  left: 50%;
+  transform: translateX(-50%);
 }
-.pricing__tier-container #tier1 {
+.pricing__tier-container .tier1 {
   border: 1px solid var(--oxy-red);
 }
-.pricing__tier-container #price1 {
+.pricing__tier-container .tier1 .left1 {
+  transform: translateY(-80%);
+}
+.pricing__tier-container .price1 {
   color: var(--oxy-red);
 }
-.pricing__tier-container #button1 {
+.pricing__tier-container .button1 {
   background-color: var(--oxy-red);
 }
-.pricing__tier-container #tier2 {
+.pricing__tier-container .tier2 {
   border: 1px solid var(--oxy-blue);
 }
-.pricing__tier-container #price2 {
+.pricing__tier-container .tier2 .left2 {
+  transform: translateY(-25%);
+}
+.pricing__tier-container .price2 {
   color: var(--oxy-blue);
 }
-.pricing__tier-container #button2 {
+.pricing__tier-container .button2 {
   background-color: var(--oxy-blue);
 }
-.pricing__tier-container #tier3 {
+.pricing__tier-container .tier3 {
   border: 1px solid var(--oxy-green);
 }
-.pricing__tier-container #price3 {
+.pricing__tier-container .tier3 .left3 {
+  transform: translateY(-40%);
+}
+.pricing__tier-container .price3 {
   color: var(--oxy-green);
 }
-.pricing__tier-container #button3 {
+.pricing__tier-container .button3 {
   background-color: var(--oxy-green);
 }
 

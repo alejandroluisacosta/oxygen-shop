@@ -8,15 +8,16 @@
 
     &__tier-container
         &__tier
+            position: relative
             border-radius: 18px
             padding-top: 1.57rem 
             padding-bottom: 1.93rem 
             padding-right: 0.63rem
+            margin-bottom: 54px
             &__left-side
                 width: 50%
                 height: 100%
                 display: inline-block
-                transform: translateY(-50%)
                 &__name
                     font-size: 20px
                 &__price
@@ -24,35 +25,42 @@
             &__list
                 display: inline-block 
                 list-style-type: none
+                text-align: left
                 &__item
                     margin-bottom: 20px
             &__button
+                position: absolute
                 display: block
                 color: white
                 padding: 1rem 3.5rem
                 border: 0
-                background-color: var(--oxy-red)
                 border-radius: 23px
-                margin-left: 50%
-                transform: translate(-50%, -65%)
+                left: 50%
+                transform: translateX(-50%)
         
-        #tier1
+        .tier1
             border: 1px solid var(--oxy-red)
-        #price1
+            .left1
+                transform: translateY(-80%)
+        .price1
             color: var(--oxy-red)
-        #button1
+        .button1
             background-color: var(--oxy-red)
 
-        #tier2
+        .tier2
             border: 1px solid var(--oxy-blue)
-        #price2
+            .left2
+                transform: translateY(-25%)
+        .price2
             color: var(--oxy-blue)
-        #button2
+        .button2
             background-color: var(--oxy-blue)
 
-        #tier3
+        .tier3
             border: 1px solid var(--oxy-green)
-        #price3
+            .left3
+                transform: translateY(-40%)
+        .price3
             color: var(--oxy-green)
-        #button3
+        .button3
             background-color: var(--oxy-green)
