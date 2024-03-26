@@ -90,6 +90,10 @@ body {
   text-align: center;
   padding-top: 100px;
 }
+.header__cta {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .header__cta__title {
   font-size: 35px;
   font-weight: 400;
@@ -98,7 +102,7 @@ body {
 }
 .header__cta__text {
   margin-bottom: 28px;
-  font-size: "Open Sans";
+  font-family: "Open Sans";
   line-height: 23px;
 }
 .header__cta__button {
@@ -112,8 +116,15 @@ body {
   width: 100%;
   margin-bottom: 40px;
 }
+.header__facts {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+  padding-bottom: 3.125rem;
+}
 .header__facts__title {
   font-size: 1.875em;
+  font-family: Raleway;
+  font-weight: 300;
   margin-bottom: 1.56em;
 }
 .header__facts__item {
