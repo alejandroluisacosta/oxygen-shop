@@ -34,6 +34,10 @@ body {
 }
 .contact__info__subtitle {
   margin-bottom: 2.375rem;
+  font-family: "Open Sans";
+}
+.contact__info__contact-method {
+  font-family: "Open Sans";
 }
 .contact__info__contact-method__icon {
   display: inline-block;
@@ -46,6 +50,8 @@ body {
   display: inline-block;
   color: #08A6E4;
   margin-bottom: 2.625rem;
+  font-family: "Open Sans";
+  font-size: 0.688rem;
 }
 .contact__form__input-container__input {
   width: 100%;
@@ -70,6 +76,7 @@ body {
 .contact__form__policies__text {
   width: 87%;
   font-size: 0.75rem;
+  font-family: "Open Sans";
   display: inline-block;
   vertical-align: top;
   color: #707070;
@@ -184,8 +191,12 @@ body {
   transform: translate(-15%, -7.5%);
 }
 .header__facts__item__number {
+  letter-spacing: 0.37rem;
   margin-bottom: 1.18em;
   font-weight: 800;
+}
+.header__facts__item__text {
+  color: #A5A5A5;
 }
 
 .main {
@@ -222,8 +233,9 @@ body {
   font-size: 30px;
   font-weight: 400;
 }
-.main__item1__text-container__text {
+.main__item1__text-container__description {
   font-size: 14px;
+  font-family: "Open Sans";
 }
 .main__item1__text-container__line {
   display: none;
@@ -255,7 +267,7 @@ body {
   text-align: left;
 }
 .main__item2__text-container__title {
-  width: 70%;
+  width: 80%;
   margin-bottom: 1.06rem;
   font-size: 30px;
   font-weight: 400;
@@ -281,7 +293,8 @@ body {
   margin-bottom: 1.65rem;
 }
 .main__item3__description {
-  width: 87%;
+  width: 95%;
+  font-size: 1rem;
 }
 .main__trumpet-container {
   background-color: #55DFB4;
@@ -339,14 +352,18 @@ body {
 }
 .pricing__tier-container__tier__left-side__name {
   font-size: 20px;
+  font-weight: 700;
 }
 .pricing__tier-container__tier__left-side__price {
   font-size: 46px;
+  font-family: "Open Sans";
 }
 .pricing__tier-container__tier__list {
   display: inline-block;
   list-style-type: none;
   text-align: left;
+  font-family: "Open Sans";
+  font-size: 0.875rem;
 }
 .pricing__tier-container__tier__list__item {
   margin-bottom: 20px;
@@ -355,17 +372,18 @@ body {
   position: absolute;
   display: block;
   color: white;
-  padding: 1rem 3.5rem;
+  padding: 1rem 3.598rem;
   border: 0;
   border-radius: 23px;
   left: 50%;
   transform: translateX(-50%);
+  font-family: "Open Sans";
 }
 .pricing__tier-container .tier1 {
   border: 1px solid var(--oxy-red);
 }
 .pricing__tier-container .tier1 .left1 {
-  transform: translateY(-80%);
+  transform: translateY(-50%);
 }
 .pricing__tier-container .price1 {
   color: var(--oxy-red);
