@@ -39,12 +39,19 @@ body {
 .contact__info__contact-method {
   font-family: "Open Sans";
 }
-.contact__info__contact-method__icon {
+.contact__info__contact-method__icon--mail {
   display: inline-block;
+  margin-right: 0.474rem;
+  margin-bottom: 0.625rem;
+}
+.contact__info__contact-method__icon--phone {
+  display: inline-block;
+  margin-right: 0.5rem;
 }
 .contact__info__contact-method__text {
   display: inline-block;
   color: #A5A5A5;
+  vertical-align: top;
 }
 .contact__form__input-container__label {
   display: inline-block;
@@ -185,7 +192,7 @@ body {
   transform: translate(50%, 10%);
 }
 .header__facts__item__svg__person {
-  transform: translate(-15%);
+  transform: translate(-20%);
 }
 .header__facts__item__svg__eye {
   transform: translate(-20%, -20%);
