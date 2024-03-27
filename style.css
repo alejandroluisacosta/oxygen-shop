@@ -357,26 +357,69 @@ body {
   font-weight: 400;
   margin-bottom: 1rem;
 }
-.pricing__tier-container__tier {
+.pricing__tier-container__tier--1 {
   position: relative;
   border-radius: 1.125rem;
   padding-top: 1.57rem;
   padding-bottom: 1.93rem;
   padding-right: 0.63rem;
   margin-bottom: 3.375rem;
+  border: 1px solid var(--oxy-red);
 }
-.pricing__tier-container__tier__left-side {
+.pricing__tier-container__tier--2 {
+  position: relative;
+  border-radius: 1.125rem;
+  padding-top: 1.57rem;
+  padding-bottom: 1.93rem;
+  padding-right: 0.63rem;
+  margin-bottom: 3.375rem;
+  border: 1px solid var(--oxy-blue);
+}
+.pricing__tier-container__tier--3 {
+  position: relative;
+  border-radius: 1.125rem;
+  padding-top: 1.57rem;
+  padding-bottom: 1.93rem;
+  padding-right: 0.63rem;
+  margin-bottom: 3.375rem;
+  border: 1px solid var(--oxy-green);
+}
+.pricing__tier-container__tier__left-side--1 {
   width: 50%;
   height: 100%;
   display: inline-block;
+  transform: translateY(-50%);
+}
+.pricing__tier-container__tier__left-side--2 {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  transform: translateY(-25%);
+}
+.pricing__tier-container__tier__left-side--3 {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  transform: translateY(-25%);
 }
 .pricing__tier-container__tier__left-side__name {
   font-size: 1.25rem;
   font-weight: 700;
 }
-.pricing__tier-container__tier__left-side__price {
+.pricing__tier-container__tier__left-side__price--1 {
   font-size: 2.875rem;
   font-family: "Open Sans";
+  color: var(--oxy-red);
+}
+.pricing__tier-container__tier__left-side__price--2 {
+  font-size: 2.875rem;
+  font-family: "Open Sans";
+  color: var(--oxy-blue);
+}
+.pricing__tier-container__tier__left-side__price--3 {
+  font-size: 2.875rem;
+  font-family: "Open Sans";
+  color: var(--oxy-green);
 }
 .pricing__tier-container__tier__list {
   display: inline-block;
@@ -388,7 +431,7 @@ body {
 .pricing__tier-container__tier__list__item {
   margin-bottom: 1.25rem;
 }
-.pricing__tier-container__tier__button {
+.pricing__tier-container__tier__button--1 {
   position: absolute;
   display: block;
   color: white;
@@ -398,42 +441,30 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-family: "Open Sans";
-}
-.pricing__tier-container .tier1 {
-  border: 1px solid var(--oxy-red);
-}
-.pricing__tier-container .tier1 .left1 {
-  transform: translateY(-50%);
-}
-.pricing__tier-container .price1 {
-  color: var(--oxy-red);
-}
-.pricing__tier-container .button1 {
   background-color: var(--oxy-red);
 }
-.pricing__tier-container .tier2 {
-  border: 1px solid var(--oxy-blue);
-}
-.pricing__tier-container .tier2 .left2 {
-  transform: translateY(-25%);
-}
-.pricing__tier-container .price2 {
-  color: var(--oxy-blue);
-}
-.pricing__tier-container .button2 {
+.pricing__tier-container__tier__button--2 {
+  position: absolute;
+  display: block;
+  color: white;
+  padding: 1rem 3.598rem;
+  border: 0;
+  border-radius: 1.438rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Open Sans";
   background-color: var(--oxy-blue);
 }
-.pricing__tier-container .tier3 {
-  border: 1px solid var(--oxy-green);
-  margin-bottom: 0;
-}
-.pricing__tier-container .tier3 .left3 {
-  transform: translateY(-40%);
-}
-.pricing__tier-container .price3 {
-  color: var(--oxy-green);
-}
-.pricing__tier-container .button3 {
+.pricing__tier-container__tier__button--3 {
+  position: absolute;
+  display: block;
+  color: white;
+  padding: 1rem 3.598rem;
+  border: 0;
+  border-radius: 1.438rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Open Sans";
   background-color: var(--oxy-green);
 }
 
