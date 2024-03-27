@@ -10,6 +10,7 @@ html {
 
 body {
   min-width: 320px;
+  font-family: Raleway;
 }
 
 :root {
@@ -24,15 +25,15 @@ body {
   padding-bottom: 2.74rem;
 }
 .contact__info {
-  margin-bottom: 53px;
+  margin-bottom: 3.31rem;
 }
 .contact__info__title {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0.31rem;
 }
 .contact__info__subtitle {
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem;
 }
 .contact__info__contact-method__icon {
   display: inline-block;
@@ -44,7 +45,7 @@ body {
 .contact__form__input-container__label {
   display: inline-block;
   color: #08A6E4;
-  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
 }
 .contact__form__input-container__input {
   width: 100%;
@@ -52,11 +53,13 @@ body {
   border-bottom: 1px solid #95989A;
 }
 .contact__form__policies {
-  margin-bottom: 33px;
+  margin-bottom: 2.06rem;
+  padding-right: 0.315rem;
 }
 .contact__form__policies__check {
   width: 24px;
   height: 24px;
+  margin-right: 0.625rem;
   color: #95989A;
   border-radius: 4px;
 }
@@ -65,7 +68,11 @@ body {
   color: green;
 }
 .contact__form__policies__text {
-  font-size: 12px;
+  width: 87%;
+  font-size: 0.75rem;
+  display: inline-block;
+  vertical-align: top;
+  color: #707070;
 }
 .contact__form__button-container {
   text-align: right;
@@ -73,17 +80,17 @@ body {
 .contact__form__button-container__button {
   padding: 1.25rem 6.06rem;
   border: 0;
-  border-radius: 35px;
+  border-radius: 2.19rem;
   color: white;
   background-color: #08A6E4;
 }
 
 .input1 {
-  margin-bottom: 42px;
+  margin-bottom: 2.625rem;
 }
 
 .input2 {
-  margin-bottom: 31px;
+  margin-bottom: 1.94rem;
 }
 
 .header {
@@ -110,11 +117,11 @@ body {
   color: white;
   background-color: #08A6E4;
   border: 0;
-  padding: 1.375em 5.75em;
+  padding: 1.375rem 5.75rem;
 }
 .header__image {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 .header__facts {
   padding-left: 2.25rem;
@@ -122,16 +129,16 @@ body {
   padding-bottom: 3.125rem;
 }
 .header__facts__title {
-  font-size: 1.875em;
+  font-size: 1.875rem;
   font-family: Raleway;
   font-weight: 300;
-  margin-bottom: 1.56em;
+  margin-bottom: 1.56rem;
 }
 .header__facts__item {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 .header__facts__item__svg {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 .header__facts__item__svg__elipse1 {
   transform: translate(40%, 10%);
