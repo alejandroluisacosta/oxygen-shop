@@ -130,25 +130,27 @@ body {
 
 .header {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 6.25rem;
+  overflow: hidden;
 }
 .header__cta {
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-bottom: 3.188rem;
 }
 .header__cta__title {
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 400;
   font-family: Raleway;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .header__cta__text {
-  margin-bottom: 28px;
+  margin-bottom: 1.75rem;
   font-family: "Open Sans";
-  line-height: 23px;
+  line-height: 1.438rem;
 }
 .header__cta__button {
-  border-radius: 40px;
+  border-radius: 2.5rem;
   color: white;
   background-color: #08A6E4;
   border: 0;
@@ -157,6 +159,7 @@ body {
 .header__image {
   width: 100%;
   margin-bottom: 2.5rem;
+  transform: scale(2);
 }
 .header__facts {
   padding-left: 2.25rem;
@@ -192,11 +195,28 @@ body {
 }
 .header__facts__item__number {
   letter-spacing: 0.37rem;
-  margin-bottom: 1.18em;
+  margin-bottom: 1.18rem;
   font-weight: 800;
 }
-.header__facts__item__text {
+.header__facts__item__text--1 {
   color: #A5A5A5;
+  font-size: 1.063rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 25.3%;
+}
+.header__facts__item__text--2 {
+  color: #A5A5A5;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 47%;
+}
+.header__facts__item__text--3 {
+  color: #A5A5A5;
+  font-size: 1.063rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 43.5%;
 }
 
 .main {
@@ -210,10 +230,10 @@ body {
   padding-bottom: 1.875rem;
   padding-left: 1.375rem;
   padding-right: 1.375rem;
-  margin-bottom: 41px;
+  margin-bottom: 2.563rem;
 }
 .main__item1__image-container {
-  margin-bottom: 27px;
+  margin-bottom: 1.689rem;
   position: relative;
 }
 .main__item1__image-container__elipse {
@@ -229,12 +249,12 @@ body {
   text-align: left;
 }
 .main__item1__text-container__title {
-  margin-bottom: 60px;
-  font-size: 30px;
+  margin-bottom: 3.75rem;
+  font-size: 1.875rem;
   font-weight: 400;
 }
 .main__item1__text-container__description {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Open Sans";
 }
 .main__item1__text-container__line {
@@ -246,10 +266,10 @@ body {
   padding-bottom: 1.875rem;
   padding-left: 1.375rem;
   padding-right: 1.375rem;
-  margin-bottom: 41px;
+  margin-bottom: 2.563rem;
 }
 .main__item2__image-container {
-  margin-bottom: 27px;
+  margin-bottom: 1.688rem;
   position: relative;
 }
 .main__item2__image-container__elipse {
@@ -269,11 +289,11 @@ body {
 .main__item2__text-container__title {
   width: 80%;
   margin-bottom: 1.06rem;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
 }
 .main__item2__text-container__text {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .main__item2__text-container__line {
   display: none;
@@ -288,7 +308,7 @@ body {
 }
 .main__item3__title {
   width: 87%;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
   margin-bottom: 1.65rem;
 }
@@ -312,7 +332,7 @@ body {
 .nav__logo {
   display: inline-block;
   color: #08A6E4;
-  font-size: 32px;
+  font-size: 2rem;
   font-family: Raleway;
 }
 .nav__menu {
@@ -333,17 +353,17 @@ body {
   text-align: center;
 }
 .pricing__title {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 400;
   margin-bottom: 1rem;
 }
 .pricing__tier-container__tier {
   position: relative;
-  border-radius: 18px;
+  border-radius: 1.125rem;
   padding-top: 1.57rem;
   padding-bottom: 1.93rem;
   padding-right: 0.63rem;
-  margin-bottom: 54px;
+  margin-bottom: 3.375rem;
 }
 .pricing__tier-container__tier__left-side {
   width: 50%;
@@ -351,11 +371,11 @@ body {
   display: inline-block;
 }
 .pricing__tier-container__tier__left-side__name {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 .pricing__tier-container__tier__left-side__price {
-  font-size: 46px;
+  font-size: 2.875rem;
   font-family: "Open Sans";
 }
 .pricing__tier-container__tier__list {
@@ -366,7 +386,7 @@ body {
   font-size: 0.875rem;
 }
 .pricing__tier-container__tier__list__item {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 .pricing__tier-container__tier__button {
   position: absolute;
@@ -374,7 +394,7 @@ body {
   color: white;
   padding: 1rem 3.598rem;
   border: 0;
-  border-radius: 23px;
+  border-radius: 1.438rem;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Open Sans";
