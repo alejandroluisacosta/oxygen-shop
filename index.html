@@ -34,40 +34,40 @@
         </ul>
     </nav>
     <header class="header">
-        <section class="header__cta">
+        <div class="header__cta">
             <h1 class="header__cta__title">Sell More!</h1>
             <p class="header__cta__text">Open shop on our platform and<br>increase your sales</p>
             <button class="header__cta__button">Open your shop</button>
-        </section>
+        </div>
         <img class="header__image" src="./resources/main-image.png" alt="Presentation Image"/>
-        <section class="header__facts">
-            <h2 class="header__facts__title">The most popular sales platform in country</h2>
-            <article class="header__facts__item">
-                <div class="header__facts__item__svg">
-                    <img class="header__facts__item__svg__elipse1" src="./resources/elipse-1.svg"/>
-                    <img class="header__facts__item__svg__person" src="./resources/person.svg"/>
-                </div>                  
-                <p class="header__facts__item__number">100000+</p>
-                <p class="header__facts__item__text--1">daily entries</p>
-            </article>
-            <article class="header__facts__item">
-                <div class="header__facts__item__svg">
-                    <img class="header__facts__item__svg__elipse" src="./resources/elipse-2.svg"/>
-                    <img class="header__facts__item__svg__eye" src="./resources/eye.svg"/>
-                </div>  
-                <p class="header__facts__item__number">2000000+</p>
-                <p class="header__facts__item__text--2">seen products every day</p>
-            </article>
-            <article class="header__facts__item">
-                <div class="header__facts__item__svg">
-                    <img class="header__facts__item__svg__elipse" src="./resources/elipse-3.svg"/>
-                    <img class="header__facts__item__svg__catalog" src="./resources/catalog.svg"/>
-                </div>  
-                <p class="header__facts__item__number">10000+</p>
-                <p class="header__facts__item__text--3">added posts daily</p>
-            </article>
-        </section>
     </header>
+    <section class="facts">
+        <h2 class="facts__title">The most popular sales platform in country</h2>
+        <article class="facts__item">
+            <div class="facts__item__svg">
+                <img class="facts__item__svg__elipse1" src="./resources/elipse-1.svg"/>
+                <img class="facts__item__svg__person" src="./resources/person.svg"/>
+            </div>                  
+            <p class="facts__item__number">100000+</p>
+            <p class="facts__item__text--1">daily entries</p>
+        </article>
+        <article class="facts__item">
+            <div class="facts__item__svg">
+                <img class="facts__item__svg__elipse" src="./resources/elipse-2.svg"/>
+                <img class="facts__item__svg__eye" src="./resources/eye.svg"/>
+            </div>  
+            <p class="facts__item__number">2000000+</p>
+            <p class="facts__item__text--2">seen products every day</p>
+        </article>
+        <article class="facts__item">
+            <div class="facts__item__svg">
+                <img class="facts__item__svg__elipse" src="./resources/elipse-3.svg"/>
+                <img class="facts__item__svg__catalog" src="./resources/catalog.svg"/>
+            </div>  
+            <p class="facts__item__number">10000+</p>
+            <p class="facts__item__text--3">added posts daily</p>
+        </article>
+    </section>
     <main class="main">
         <section class="main__item1">
             <div class="main__item1__image-container">
@@ -106,8 +106,8 @@
     <section class="pricing">
         <h2 class="pricing__title">Pricing</h2>
         <div class="pricing__tier-container">
-            <article class="tier1 pricing__tier-container__tier--1">
-                <div class="pricing__tier-container__tier__left-side--1">
+            <article class="pricing__tier-container__tier pricing__tier-container__tier--basic ">
+                <div class="pricing__tier-container__tier__left-side pricing__tier-container__tier__left-side--1">
                     <p class="pricing__tier-container__tier__left-side__name">Basic</p>
                     <p class="pricing__tier-container__tier__left-side__price--1">$0</p>
                 </div> 
@@ -120,8 +120,8 @@
                 </ul>
                 <button class="pricing__tier-container__tier__button--1">Begin</button>
             </article>
-            <article class="pricing__tier-container__tier--2">
-                <div class="pricing__tier-container__tier__left-side--2">
+            <article class="pricing__tier-container__tier pricing__tier-container__tier--proffesional">
+                <div class="pricing__tier-container__tier__left-side">
                     <p class="pricing__tier-container__tier__left-side__name">Professional</p>
                     <p class="pricing__tier-container__tier__left-side__price--2">$25</p>
                     <p class="pricing__tier-container__tier__left-side__limited">Limited offer</p>
@@ -135,8 +135,8 @@
                 </ul>
                 <button class="pricing__tier-container__tier__button--2">Begin</button>
             </article>
-            <article class="pricing__tier-container__tier--3">
-                <div class="pricing__tier-container__tier__left-side--3">
+            <article class="pricing__tier-container__tier pricing__tier-container__tier--premium">
+                <div class="pricing__tier-container__tier__left-side">
                     <p class="pricing__tier-container__tier__left-side__name">Premium</p>
                     <p class="pricing__tier-container__tier__left-side__price--3">$60</p>
                     <p class="pricing__tier-container__tier__left-side__limited">Limited offer</p>
@@ -157,7 +157,7 @@
             <h2 class="contact__info__title">Any questions?</h2>
             <p class="contact__info__subtitle">Leave your email address or call us!</p>
             <div class="contact__info__contact-method">
-                    <img class="contact__info__contact-method__icon--mail" src="./resources/mail.svg"/>
+                <img class="contact__info__contact-method__icon--mail" src="./resources/mail.svg"/>
                 <p class="contact__info__contact-method__text">info@bestshop.xyz</p>
             </div>
             <div class="contact__info__contact-method">
