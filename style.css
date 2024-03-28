@@ -143,7 +143,7 @@ body {
 .header__cta {
   padding-left: 2rem;
   padding-right: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 6.25rem;
 }
 .header__cta__title {
   font-size: 2.188rem;
@@ -162,6 +162,7 @@ body {
   background-color: #08A6E4;
   border: 0;
   padding: 1.375rem 5.75rem;
+  box-shadow: 0.31rem 0.625rem 0.875rem 0rem rgba(7, 172, 230, 0.2901960784);
 }
 .header__image {
   width: 100%;
@@ -320,7 +321,7 @@ body {
 .pricing__tier-container__tier--basic {
   border-color: var(--oxy-red);
 }
-.pricing__tier-container__tier--proffesional {
+.pricing__tier-container__tier--professional {
   border-color: var(--oxy-blue);
 }
 .pricing__tier-container__tier--premium {
@@ -364,6 +365,9 @@ body {
 .pricing__tier-container__tier__list__item {
   margin-bottom: 1.25rem;
 }
+.pricing__tier-container__tier__list__item--checkbox img {
+  margin-right: 0.625rem;
+}
 .pricing__tier-container__tier__button--1 {
   position: absolute;
   display: block;
@@ -405,7 +409,8 @@ body {
   padding-left: 2.25rem;
   padding-right: 2.25rem;
   padding-bottom: 3.125rem;
-  margin-top: 2.5em;
+  margin-top: 3rem;
+  text-align: center;
 }
 .facts__title {
   font-size: 1.875rem;
