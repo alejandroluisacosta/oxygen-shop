@@ -53,23 +53,19 @@
                     margin-bottom: 1.06rem
                     font-size: 1.875rem
                     font-weight: 400
+                &--3
+                    width: 87%
+                    font-size: 1.875rem
+                    font-weight: 400
+                    margin-bottom: 1.65rem
             &__description
                 font-size: 0.875rem
                 font-family: "Open Sans"
+                &--3
+                    width: 95%
+                    font-size: 1rem 
             &__line
                 display: none
-
-        &__title--3
-            width: 87%
-            font-size: 1.875rem
-            font-weight: 400
-            margin-bottom: 1.65rem
-        &__description
-            width: 95%
-            font-size: 1rem
-            font-family: "Open Sans"
-        &__line
-            display: none
 
     &__trumpet-container
         background-color: #55DFB4
@@ -78,3 +74,63 @@
 
 @media only screen and (min-width: 1000px)
     .main
+        &__item
+            display: flex
+            justify-content: space-between
+            padding-top: 5.688rem
+            padding-bottom: 5.688rem
+            &--2
+                padding-top: 1.812rem
+                padding-bottom: 0.5rem
+            &--3
+                padding-top: 2rem
+                padding-bottom: 2rem
+            &__text-container
+                width: 45%
+                &--3
+                    display: block
+                &__title
+                    font-size: 2.25rem
+                    &--2
+                        min-width: 259px
+                        max-width: 316px
+                        margin-top: 4.313rem
+                &__description
+                    margin-bottom: 3.125rem
+                    width: 80%
+                    max-width: 375px
+                    min-width: 370px
+                &__line
+                    display: block
+            &__image-container
+                width: 45%
+                &--1
+                    order: 2
+                    transform: translateX(-15%)
+                &__elipse
+                    &--1
+                        width: 180px
+                        height: 180px
+                        transform: translate(125%, 0%)
+                    &--2
+                        width: 320px
+                        height: 320px
+                &__image
+                    width: initial
+                    height: initial
+                    &--1
+                        transform: translateY(35%)
+                    &--2
+                        transform: translate(15%, 5%)
+
+        &__trumpet-container
+            display: inline-block
+
+                
+                    
+
+                        
+
+
+            
+        

@@ -258,25 +258,21 @@ body {
   font-size: 1.875rem;
   font-weight: 400;
 }
-.main__item__text-container__description {
-  font-size: 0.875rem;
-  font-family: "Open Sans";
-}
-.main__item__text-container__line {
-  display: none;
-}
-.main__item__title--3 {
+.main__item__text-container__title--3 {
   width: 87%;
   font-size: 1.875rem;
   font-weight: 400;
   margin-bottom: 1.65rem;
 }
-.main__item__description {
-  width: 95%;
-  font-size: 1rem;
+.main__item__text-container__description {
+  font-size: 0.875rem;
   font-family: "Open Sans";
 }
-.main__item__line {
+.main__item__text-container__description--3 {
+  width: 95%;
+  font-size: 1rem;
+}
+.main__item__text-container__line {
   display: none;
 }
 .main__trumpet-container {
@@ -286,6 +282,74 @@ body {
   transform: translateY(15%);
 }
 
+@media only screen and (min-width: 1000px) {
+  .main__item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5.688rem;
+    padding-bottom: 5.688rem;
+  }
+  .main__item--2 {
+    padding-top: 1.812rem;
+    padding-bottom: 0.5rem;
+  }
+  .main__item--3 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .main__item__text-container {
+    width: 45%;
+  }
+  .main__item__text-container--3 {
+    display: block;
+  }
+  .main__item__text-container__title {
+    font-size: 2.25rem;
+  }
+  .main__item__text-container__title--2 {
+    min-width: 259px;
+    max-width: 316px;
+    margin-top: 4.313rem;
+  }
+  .main__item__text-container__description {
+    margin-bottom: 3.125rem;
+    width: 80%;
+    max-width: 375px;
+    min-width: 370px;
+  }
+  .main__item__text-container__line {
+    display: block;
+  }
+  .main__item__image-container {
+    width: 45%;
+  }
+  .main__item__image-container--1 {
+    order: 2;
+    transform: translateX(-15%);
+  }
+  .main__item__image-container__elipse--1 {
+    width: 180px;
+    height: 180px;
+    transform: translate(125%, 0%);
+  }
+  .main__item__image-container__elipse--2 {
+    width: 320px;
+    height: 320px;
+  }
+  .main__item__image-container__image {
+    width: initial;
+    height: initial;
+  }
+  .main__item__image-container__image--1 {
+    transform: translateY(35%);
+  }
+  .main__item__image-container__image--2 {
+    transform: translate(15%, 5%);
+  }
+  .main__trumpet-container {
+    display: inline-block;
+  }
+}
 .nav {
   width: 100%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
