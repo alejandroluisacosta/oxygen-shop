@@ -10,40 +10,63 @@
             font-family: Raleway
             font-weight: 300
             margin-bottom: 1.56rem
-        &__item
-            margin-bottom: 1.5rem
-            &__svg
-                margin-bottom: 1rem
-                &__elipse1
-                    transform: translate(40%, 10%)
-                &__elipse
-                    transform: translate(50%, 10%)
-                &__person
-                    transform: translate(-20%)
-                &__eye
-                    transform: translate(-20%, -20%)
-                &__catalog
-                    transform: translate(-15%, -7.5%)
-            &__number
-                letter-spacing: 0.37rem
-                margin-bottom: 1.18rem
-                font-weight: 800
+        &__item-container
+            &__item
+                margin-bottom: 1.5rem
+                &__svg
+                    margin-bottom: 1rem
+                    &__elipse
+                        transform: translate(50%, 10%)
+                        &--1
+                            transform: translate(40%, 10%)
+                    &__person
+                        transform: translate(-20%)
+                    &__eye
+                        transform: translate(-20%, -20%)
+                    &__catalog
+                        transform: translate(-15%, -7.5%)
+                &__number
+                    letter-spacing: 0.37rem
+                    margin-bottom: 1.18rem
+                    font-weight: 800
+                &__text
+                    color: #A5A5A5
+                    font-size: 1.063rem
+                    margin-left: 50%
+                    transform: translateX(-50%)
+                    &--2
+                        font-size: 1rem
+                        width: 47%
+                    &--3
+                        width: 43.5%
 
-            &__text
-                &--1
-                    color: #A5A5A5
-                    font-size: 1.063rem
-                    margin-left: 50%
-                    transform: translateX(-50%)
-                    width: 25.3%
-                &--2
-                    color: #A5A5A5
-                    margin-left: 50%
-                    transform: translateX(-50%)
-                    width: 47%
-                &--3
-                    color: #A5A5A5
-                    font-size: 1.063rem
-                    margin-left: 50%
-                    transform: translateX(-50%)
-                    width: 43.5%
+@media only screen and (min-width: 1000px)
+    .facts
+        margin-top: 0
+        &__title
+            margin-bottom: 4.5rem
+        &__item-container
+            padding-left: 12.5%
+            padding-right: 11.85%
+            display: flex
+            justify-content: space-between
+            &__item
+                text-align: center
+                &__svg
+                    &__elipse
+                        transform: translate(35%, 10%)
+                        &--1
+                            transform: translate(20%, 10%)
+                        &--3
+                            transform: translate(25%, 10%)
+                    &__person
+                        transform: translate(-55%)
+                    &__eye
+                        transform: translate(-35%, -20%)
+                    &__catalog
+                        transform: translate(-35%, -7.5%)
+                &__text
+                    width: 100%
+                    margin-left: 45%
+                    &--2, &--3
+                        width: 80%
