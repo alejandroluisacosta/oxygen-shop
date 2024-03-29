@@ -9,6 +9,7 @@
         display: inline-block
         color: #08A6E4
         font-size: 2rem
+        font-weight: 300
         font-family: Raleway
 
     &__menu
@@ -21,8 +22,37 @@
         display: inline-block
 
         &__page
+            font-family: "Open Sans"
+            font-size: 0.688rem
+            color: #A5A5A5
             display: none   
 
 
-
+@media only screen and (min-width: 1000px)
+    .nav
+        padding-top: 0
+        padding-bottom: 0
+        padding-left: 7.073% 
+        padding-right: 8.365%
+        display: flex
+        justify-content: space-between
+        &__logo
+            margin: 1rem 0
+            margin-right: 36.593%
+        &__menu
+            display: none
+        &__list
+            flex-grow: 1
+            display: flex
+            justify-content: space-between
+            text-align: center
+            padding-top: 1.75rem
+            &__page
+                width: 90px
+                display: block
+                font-weight: 700
+                &--active
+                    border-bottom: 4px solid var(--oxy-blue)
+                    color: black
+                    
 
