@@ -152,9 +152,12 @@ body {
   margin-bottom: 1.25rem;
 }
 .header__cta__text {
+  width: 82.1%;
   margin-bottom: 1.75rem;
   font-family: "Open Sans";
   line-height: 1.438rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 .header__cta__button {
   border-radius: 2.5rem;
@@ -170,6 +173,25 @@ body {
   transform: scale(2);
 }
 
+@media only screen and (min-width: 1000px) {
+  .header {
+    padding-top: 8rem;
+  }
+  .header__cta {
+    margin-bottom: 0;
+  }
+  .header__cta__text {
+    width: 100%;
+    margin-left: 0;
+    transform: translate(0%);
+  }
+  .header__cta__button {
+    padding: 1.375rem 9.75rem;
+  }
+  .header__image {
+    transform: scale(1);
+  }
+}
 .main {
   text-align: center;
   padding: 2.62rem 1.875rem;
@@ -327,7 +349,7 @@ body {
     padding-top: 1.75rem;
   }
   .nav__list__page {
-    width: 90px;
+    width: 20%;
     display: block;
     font-weight: 700;
   }
