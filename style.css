@@ -396,6 +396,7 @@ body {
     justify-self: start;
   }
   .main__item__image-container__elipse--1 {
+    content: attr(src);
     width: 180px;
     height: 180px;
     transform: translate(125%, 0%);
