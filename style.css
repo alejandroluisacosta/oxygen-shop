@@ -512,6 +512,9 @@ body {
   font-family: "Open Sans";
   color: var(--oxy-green);
 }
+.pricing__tier-container__tier__left-side__limited {
+  font-weight: bold;
+}
 .pricing__tier-container__tier__list {
   display: inline-block;
   list-style-type: none;
@@ -525,7 +528,7 @@ body {
 .pricing__tier-container__tier__list__item--checkbox img {
   margin-right: 0.625rem;
 }
-.pricing__tier-container__tier__button--1 {
+.pricing__tier-container__tier__button {
   position: absolute;
   display: block;
   color: white;
@@ -535,33 +538,53 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-family: "Open Sans";
+}
+.pricing__tier-container__tier__button--1 {
   background-color: var(--oxy-red);
 }
 .pricing__tier-container__tier__button--2 {
-  position: absolute;
-  display: block;
-  color: white;
-  padding: 1rem 3.598rem;
-  border: 0;
-  border-radius: 1.438rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Open Sans";
   background-color: var(--oxy-blue);
 }
 .pricing__tier-container__tier__button--3 {
-  position: absolute;
-  display: block;
-  color: white;
-  padding: 1rem 3.598rem;
-  border: 0;
-  border-radius: 1.438rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: "Open Sans";
   background-color: var(--oxy-green);
 }
 
+@media screen and (min-width: 1000px) {
+  .pricing__title {
+    margin-bottom: 3.125rem;
+  }
+  .pricing__tier-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pricing__tier-container__tier {
+    width: 23%;
+    padding-right: 0;
+    padding-bottom: 5.062rem;
+  }
+  .pricing__tier-container__tier__left-side {
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    height: unset;
+    margin-bottom: 3.125rem;
+  }
+  .pricing__tier-container__tier__left-side--1 {
+    margin-bottom: 4.312rem;
+  }
+  .pricing__tier-container__tier__list {
+    text-align: center;
+  }
+  .pricing__tier-container__tier__button {
+    transform: translate(-50%, 100%);
+  }
+  .pricing__tier-container__tier__button--1 {
+    left: 19%;
+  }
+  .pricing__tier-container__tier__button--3 {
+    left: 81%;
+  }
+}
 .facts {
   padding-left: 2.25rem;
   padding-right: 2.25rem;

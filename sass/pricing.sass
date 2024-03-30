@@ -6,8 +6,7 @@
         font-weight: 400
         margin-bottom: 1rem
 
-    &__tier-container
-            
+    &__tier-container        
         &__tier
             border-radius: 1.125rem
             padding-top: 1.57rem 
@@ -36,7 +35,6 @@
                 height: 100%
                 display: inline-block
                 transform: translateY(-25%)
-
                 &--1
                     transform: translateY(-50%)      
                 &__name
@@ -55,6 +53,8 @@
                         font-size: 2.875rem
                         font-family: "Open Sans"
                         color: var(--oxy-green)
+                &__limited
+                    font-weight: bold
             &__list
                 display: inline-block 
                 list-style-type: none
@@ -66,37 +66,47 @@
                     &--checkbox img
                         margin-right: 0.625rem
             &__button
+                position: absolute
+                display: block
+                color: white
+                padding: 1rem 3.598rem
+                border: 0
+                border-radius: 1.438rem
+                left: 50%
+                transform: translateX(-50%)
+                font-family: "Open Sans"
                 &--1
-                    position: absolute
-                    display: block
-                    color: white
-                    padding: 1rem 3.598rem
-                    border: 0
-                    border-radius: 1.438rem
-                    left: 50%
-                    transform: translateX(-50%)
-                    font-family: "Open Sans"
                     background-color: var(--oxy-red)
                 &--2
-                    position: absolute
-                    display: block
-                    color: white
-                    padding: 1rem 3.598rem
-                    border: 0
-                    border-radius: 1.438rem
-                    left: 50%
-                    transform: translateX(-50%)
-                    font-family: "Open Sans"
                     background-color: var(--oxy-blue)
                 &--3
-                    position: absolute
-                    display: block
-                    color: white
-                    padding: 1rem 3.598rem
-                    border: 0
-                    border-radius: 1.438rem
-                    left: 50%
-                    transform: translateX(-50%)
-                    font-family: "Open Sans"
                     background-color: var(--oxy-green)                 
-        
+
+@media screen and (min-width: 1000px)
+    .pricing
+        &__title
+            margin-bottom: 3.125rem
+        &__tier-container
+            display: flex
+            justify-content: space-around
+            &__tier
+                width: 23%
+                padding-right: 0
+                padding-bottom: 5.062rem
+                &__left-side
+                    display: block
+                    margin-left: 50%
+                    transform: translate(-50%)
+                    height: unset
+                    margin-bottom: 3.125rem
+                    &--1
+                        margin-bottom: 4.312rem
+                &__list
+                    text-align: center
+                &__button
+                    transform: translate(-50%, 100%)
+                    &--1
+                        left: 19%
+                    &--3
+                        left: 81%
+         
