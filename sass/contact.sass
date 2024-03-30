@@ -19,6 +19,8 @@
                     margin-right: 0.474rem
                     margin-bottom: 0.625rem
                 &--phone
+                    width: 20px
+                    height: 20px
                     display: inline-block
                     margin-right: 0.5rem
             &__text
@@ -38,6 +40,10 @@
                 width: 100%
                 border: none
                 border-bottom: 1px solid #95989A
+                &--1
+                    margin-bottom: 2.625rem
+                &--2
+                    margin-bottom: 1.94rem
         &__policies
             margin-bottom: 2.06rem
             padding-right: 0.315rem
@@ -67,10 +73,30 @@
                 background-color: #08A6E4
                 box-shadow: 0.31rem 0.625rem 0.875rem 0rem #07ACE64A
 
-            
+@media only screen and (min-width: 1000px)
+    .contact
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        padding-left: 5%
+        padding-right: 5%
+        &__info
+            justify-self: center
+            &__contact-method
+                display: inline-block
+                &__icon
+                    &--phone 
+                        margin-bottom: 0.5rem
+                &__text
+                    &--1
+                        margin-right: 1.25rem
+        &__form
+            justify-self: center
+            &__policies
+                &__text
+                    max-width: 405px
 
-.input1
-    margin-bottom: 2.625rem
-
-.input2
-    margin-bottom: 1.94rem
+@media only screen and (min-width: 1200px)
+    .contact
+        &__info
+            &__contact-method
+                display: inline-block
