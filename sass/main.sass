@@ -27,6 +27,8 @@
                 position: absolute
                 &--1
                     transform: translate(110%, -25%)
+                &--1-desktop
+                    display: none
                 &--2
                     width: 132px
                     height: 132px
@@ -129,7 +131,9 @@
                     justify-self: start
                 &__elipse
                     &--1
-                        content: attr(src)
+                        display: none
+                    &--1-desktop
+                        display: block
                         width: 180px
                         height: 180px
                         transform: translate(125%, 0%)

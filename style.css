@@ -273,6 +273,9 @@ body {
 .main__item__image-container__elipse--1 {
   transform: translate(110%, -25%);
 }
+.main__item__image-container__elipse--1-desktop {
+  display: none;
+}
 .main__item__image-container__elipse--2 {
   width: 132px;
   height: 132px;
@@ -396,7 +399,10 @@ body {
     justify-self: start;
   }
   .main__item__image-container__elipse--1 {
-    content: attr(src);
+    display: none;
+  }
+  .main__item__image-container__elipse--1-desktop {
+    display: block;
     width: 180px;
     height: 180px;
     transform: translate(125%, 0%);
