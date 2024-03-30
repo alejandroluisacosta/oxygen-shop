@@ -520,20 +520,11 @@ body {
 .pricing__tier-container__tier--basic {
   border-color: var(--oxy-red);
 }
-.pricing__tier-container__tier--basic:hover {
-  box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(235, 71, 110, 0.2901960784);
-}
 .pricing__tier-container__tier--professional {
   border-color: var(--oxy-blue);
 }
-.pricing__tier-container__tier--professional:hover {
-  box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(7, 172, 230, 0.2901960784);
-}
 .pricing__tier-container__tier--premium {
   border-color: var(--oxy-green);
-}
-.pricing__tier-container__tier--premium:hover {
-  box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(85, 223, 180, 0.2901960784);
 }
 .pricing__tier-container__tier__left-side {
   width: 50%;
@@ -590,13 +581,13 @@ body {
   transform: translateX(-50%);
   font-family: "Open Sans";
 }
-.pricing__tier-container__tier__button--1 {
+.pricing__tier-container__tier__button--basic {
   background-color: var(--oxy-red);
 }
-.pricing__tier-container__tier__button--2 {
+.pricing__tier-container__tier__button--professional {
   background-color: var(--oxy-blue);
 }
-.pricing__tier-container__tier__button--3 {
+.pricing__tier-container__tier__button--premium {
   background-color: var(--oxy-green);
 }
 
@@ -612,6 +603,19 @@ body {
     width: 23%;
     padding-right: unset;
     padding-bottom: unset;
+  }
+  .pricing__tier-container__tier:hover {
+    transform: scale(1.1);
+    transition: transform 200ms 0ms linear;
+  }
+  .pricing__tier-container__tier--basic:hover {
+    box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(235, 71, 110, 0.2901960784);
+  }
+  .pricing__tier-container__tier--professional:hover {
+    box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(7, 172, 230, 0.2901960784);
+  }
+  .pricing__tier-container__tier--premium:hover {
+    box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(85, 223, 180, 0.2901960784);
   }
   .pricing__tier-container__tier__left-side {
     display: block;
@@ -629,6 +633,15 @@ body {
   .pricing__tier-container__tier__button {
     position: relative;
     top: 1.5rem;
+  }
+  .pricing__tier-container__tier__button--basic:hover {
+    box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(235, 71, 110, 0.2901960784);
+  }
+  .pricing__tier-container__tier__button--professional:hover {
+    box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(7, 172, 230, 0.2901960784);
+  }
+  .pricing__tier-container__tier__button--premium:hover {
+    box-shadow: 0.312rem 0.625rem 1.688rem 0px rgba(85, 223, 180, 0.2901960784);
   }
 }
 .facts {
