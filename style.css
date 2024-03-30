@@ -610,8 +610,8 @@ body {
   }
   .pricing__tier-container__tier {
     width: 23%;
-    padding-right: 0;
-    padding-bottom: 5.062rem;
+    padding-right: unset;
+    padding-bottom: unset;
   }
   .pricing__tier-container__tier__left-side {
     display: block;
@@ -627,13 +627,8 @@ body {
     text-align: center;
   }
   .pricing__tier-container__tier__button {
-    transform: translate(-50%, 100%);
-  }
-  .pricing__tier-container__tier__button--1 {
-    left: 19%;
-  }
-  .pricing__tier-container__tier__button--3 {
-    left: 82%;
+    position: relative;
+    top: 1.5rem;
   }
 }
 .facts {
