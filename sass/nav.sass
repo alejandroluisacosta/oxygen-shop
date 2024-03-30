@@ -3,6 +3,30 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4)
     padding: 1em 1.5em
     position: relative
+    max-height: 4.375rem
+    transition: max-height 300ms linear
+    &:active
+        max-height: 14.688rem
+        position: absolute
+        z-index: 1
+        padding-bottom: 1.188rem
+        background-color: white
+        ~ .header
+            padding-top: 10.625rem
+        .nav__logo
+            display: block
+            margin-bottom: 2.875rem
+        .nav__list__page
+            display: block
+        .nav__menu
+            display: none
+        .nav__close
+            display: block
+            position: absolute
+            right: 1.875rem
+            top: 1.5rem
+            color: #08A6E4
+
 
     &__logo
         display: inline-block
@@ -16,6 +40,11 @@
         right: 1.875rem
         top: 1.5rem
         color: #08A6E4
+        transition: display 300ms linear
+
+    &__close
+        display: none
+        transition: display 300ms linear
 
     &__list   
         display: inline-block
@@ -24,7 +53,13 @@
             font-family: "Open Sans"
             font-size: 0.688rem
             color: #A5A5A5
-            display: none   
+            display: none
+            margin-bottom: 0.875rem
+            &--active
+                color: black
+            & a
+                text-decoration: none
+                color: unset  
 
 
 @media only screen and (min-width: 1000px)
@@ -50,11 +85,8 @@
                 width: 20%
                 display: block
                 font-weight: 700
+                margin-bottom: unset
                 &--active
                     border-bottom: 4px solid var(--oxy-blue)
-                    color: black
-                & a
-                    text-decoration: none
-                    color: unset
                     
 
