@@ -20,8 +20,11 @@
             display: block
         .nav__menu
             display: none
+            visibility: hidden
+            opacity: 0
         .nav__close
-            display: block
+            visibility: visible
+            opacity: 1
             position: absolute
             right: 1.875rem
             top: 1.5rem
@@ -40,11 +43,13 @@
         right: 1.875rem
         top: 1.5rem
         color: #08A6E4
-        transition: display 300ms linear
+        opacity: 1
+        transition: opacity 300ms linear
 
     &__close
-        display: none
-        transition: display 300ms linear
+        visibility: hidden
+        opacity: 0
+        transition: opacity 300ms linear
 
     &__list   
         display: inline-block
