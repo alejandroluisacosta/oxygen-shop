@@ -693,8 +693,6 @@ body {
   }
 }
 .facts {
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
   padding-bottom: 3.125rem;
   margin-top: 3rem;
   text-align: center;
@@ -753,8 +751,8 @@ body {
     margin-bottom: 4.5rem;
   }
   .facts__item-container {
-    padding-left: 12.5%;
-    padding-right: 11.85%;
+    padding-left: 18%;
+    padding-right: 18%;
     display: flex;
     justify-content: space-between;
   }
@@ -785,6 +783,12 @@ body {
   }
   .facts__item-container__item__text--2, .facts__item-container__item__text--3 {
     width: 80%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .facts__item-container {
+    padding-left: 25%;
+    padding-right: 25%;
   }
 }
 
