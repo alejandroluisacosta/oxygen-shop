@@ -4,9 +4,12 @@
         text-align: center
 
         &__title
+            width: 75%
             font-size: 1.875rem
             font-family: Raleway
-            font-weight: 300
+            font-weight: 250
+            margin-left: 50%
+            transform: translateX(-50%)
             margin-bottom: 1.56rem
         &__item-container
             &__item
@@ -16,7 +19,9 @@
                     &__elipse
                         transform: translate(50%, 10%)
                         &--1
-                            transform: translate(40%, 10%)
+                            transform: translate(38%, 8%)
+                        &--2
+                            transform: translate(54%, 10%)
                     &__person
                         transform: translate(-20%)
                     &__eye
@@ -26,6 +31,7 @@
                 &__number
                     letter-spacing: 0.37rem
                     margin-bottom: 1.18rem
+                    font-size: 1.25rem
                     font-weight: 800
                 &__text
                     color: #A5A5A5
@@ -34,9 +40,9 @@
                     transform: translateX(-50%)
                     &--2
                         font-size: 1rem
-                        width: 47%
+                        width: 40%
                     &--3
-                        width: 43.5%
+                        width: 35%
 
 @media only screen and (min-width: 1000px)
     .facts
