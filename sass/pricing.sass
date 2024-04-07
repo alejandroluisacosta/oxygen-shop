@@ -33,7 +33,7 @@
                     font-size: 1.25rem
                     font-weight: 700
                 &__price
-                    font-weight: 300
+                    font-weight: 100
                     &--1
                         font-size: 2.875rem
                         font-family: "Open Sans"
@@ -47,7 +47,7 @@
                         font-family: "Open Sans"
                         color: var(--oxy-green)
                 &__limited
-                    font-weight: 700
+                    font-weight: 600
                     font-size: 0.75rem
             &__list
                 display: inline-block 
@@ -122,4 +122,10 @@
                         &:hover
                             box-shadow: 0.312rem 0.625rem 1.688rem 0px #55DFB44A
                         
-         
+@media only screen and (min-width: 1200px)
+    .pricing
+        padding-left: 10%
+        padding-right: 10%
+        &__tier-container
+            &__tier
+                width: 27%
