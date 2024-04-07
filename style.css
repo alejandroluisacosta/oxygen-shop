@@ -704,7 +704,7 @@ body {
   width: 75%;
   font-size: 1.875rem;
   font-family: Raleway;
-  font-weight: 250;
+  font-weight: 200;
   margin-left: 50%;
   transform: translateX(-50%);
   margin-bottom: 1.56rem;
@@ -713,7 +713,7 @@ body {
   margin-bottom: 1.5rem;
 }
 .facts__item-container__item__svg {
-  margin-bottom: 1rem;
+  margin-bottom: 1.1rem;
 }
 .facts__item-container__item__svg__elipse {
   transform: translate(50%, 10%);
@@ -722,16 +722,16 @@ body {
   transform: translate(38%, 8%);
 }
 .facts__item-container__item__svg__elipse--2 {
-  transform: translate(54%, 10%);
+  transform: translate(57%, 10%);
 }
 .facts__item-container__item__svg__person {
-  transform: translate(-20%);
+  transform: translate(-29%, -5%);
 }
 .facts__item-container__item__svg__eye {
-  transform: translate(-20%, -20%);
+  transform: translate(-16%, -20%);
 }
 .facts__item-container__item__svg__catalog {
-  transform: translate(-15%, -7.5%);
+  transform: translate(-7.5%, -9%);
 }
 .facts__item-container__item__number {
   letter-spacing: 0.37rem;
