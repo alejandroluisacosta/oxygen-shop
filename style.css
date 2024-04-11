@@ -567,6 +567,9 @@ body {
     font-weight: 700;
     margin-bottom: unset;
   }
+  .nav__list__page:hover {
+    color: black;
+  }
   .nav__list__page--active {
     border-bottom: 4px solid var(--oxy-blue);
   }
@@ -679,6 +682,7 @@ body {
     width: 23%;
     padding-right: unset;
     padding-bottom: unset;
+    transition: transform 150ms 0ms linear;
   }
   .pricing__tier-container__tier:hover {
     transform: scale(1.15);
