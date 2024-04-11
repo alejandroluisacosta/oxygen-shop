@@ -530,11 +530,28 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  .nav:active {
+    position: initial;
+    padding-bottom: initial;
+  }
+  .nav:active ~ .header {
+    padding-top: 8rem;
+  }
+  .nav:active .nav__logo {
+    display: initial;
+    margin-bottom: 1rem;
+  }
+  .nav:active .nav__close {
+    display: none;
+  }
   .nav__logo {
     margin: 1rem 0;
     margin-right: 36.593%;
   }
   .nav__menu {
+    display: none;
+  }
+  .nav__close {
     display: none;
   }
   .nav__list {

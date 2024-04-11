@@ -75,10 +75,22 @@
         padding-right: 8.365%
         display: flex
         justify-content: space-between
+        &:active
+            position: initial 
+            padding-bottom: initial
+            ~ .header
+                padding-top: 8rem
+            .nav__logo
+                display: initial
+                margin-bottom: 1rem
+            .nav__close
+                display: none
         &__logo
             margin: 1rem 0
             margin-right: 36.593%
         &__menu
+            display: none
+        &__close
             display: none
         &__list
             flex-grow: 1
