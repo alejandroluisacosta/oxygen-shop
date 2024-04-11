@@ -682,11 +682,11 @@ body {
     width: 23%;
     padding-right: unset;
     padding-bottom: unset;
-    transition: transform 150ms 0ms linear;
+    transition: transform 150ms 0ms linear, box-shadow 500ms 0ms linear;
   }
   .pricing__tier-container__tier:hover {
     transform: scale(1.15);
-    transition: transform 200ms 0ms linear;
+    transition: transform 200ms 0ms linear, box-shadow 100ms 0ms linear;
   }
   .pricing__tier-container__tier--basic:hover {
     box-shadow: 0.312rem 0.625rem 1.688rem 0px var(--oxy-red-hover);
