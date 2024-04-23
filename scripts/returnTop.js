@@ -1,7 +1,9 @@
 let returnTopBtn = null;
 
 document.addEventListener("DOMContentLoaded", function() {
+
     returnTopBtn = document.getElementById('return-top');
+
     returnTopBtn.addEventListener("click", () => {
         setTimeout(() => {
             window.scrollTo(top);
@@ -12,7 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 returnTopBtn.style.backgroundColor = "var(--oxy-blue)";
                 returnTopBtn.style.border = "0";
                 returnTopBtn.style.boxShadow = "none";
-            }, 150) 
+            }, 100) 
         }, 200);
     })
 })
+
