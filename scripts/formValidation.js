@@ -36,10 +36,33 @@ document.addEventListener("DOMContentLoaded", function() {
             else {
                 checkbox.style.cssText = "";
             }
+
+            nameInput.value = "";
+            emailInput.value = "";
+            checkbox.checked = false;
+            
             return true;
         }
 
-        if (checkValues())
-        
+        if (checkValues()) {
+            fetch('https://jsonplaceholder.typicode.com/posts', {
+            method: 'POST',
+            body: JSON.stringify({
+                name: userName,
+                email: userEmail,
+                userId: 1,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+            })
+            .then((response) => response.json())
+            .then((json) => { 
+                console.log(json); 
+                alert("Form submitted successfully")
+            }) 
+            .catch((error) => console.error('Error:', error));
+        }
+
     })
 })
