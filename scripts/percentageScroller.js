@@ -1,11 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    const body = document.querySelector(body);
-    const percentageScroller = document.getElementById("nav__percentage__scroller");
+    const body = document.querySelector("body");
+    const percentageScroller = document.getElementById("nav__percentage-scroller");
 
-    scroller.addEventListener("scroll", () => {
-        let scrolledPercentage = (body.scrollTop / body.scrollHeight) * 100;
-        percentageScroller.style.backgroundColor = "black";
-        percentageScroller.style.width = scrolledPercentage;
+    window.addEventListener("scroll", () => {
+        let scrolledPercentage = (document.documentElement.scrollTop / (body.scrollHeight - window.innerHeight)) * 100;
+        percentageScroller.style.width = scrolledPercentage + "%";
     });
 })
