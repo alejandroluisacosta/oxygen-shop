@@ -461,36 +461,6 @@ body {
   max-height: 4.375rem;
   transition: max-height 300ms linear;
 }
-.nav:active {
-  max-height: 14.688rem;
-  position: absolute;
-  z-index: 1;
-  padding-bottom: 1.188rem;
-  background-color: white;
-}
-.nav:active ~ .header {
-  padding-top: 10.625rem;
-}
-.nav:active .nav__logo {
-  display: block;
-  margin-bottom: 2.875rem;
-}
-.nav:active .nav__list__page {
-  display: block;
-}
-.nav:active .nav__menu {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-}
-.nav:active .nav__close {
-  visibility: visible;
-  opacity: 1;
-  position: absolute;
-  right: 1.875rem;
-  top: 1.5rem;
-  color: var(--oxy-light-blue);
-}
 .nav__logo {
   display: inline-block;
   color: var(--oxy-light-blue);
@@ -853,13 +823,14 @@ body {
   position: fixed;
   z-index: 1;
   right: 5%;
-  bottom: 7.5%;
+  bottom: 10%;
   background-color: var(--oxy-blue);
   border: 0;
   border-radius: 25px;
   height: 50px;
   width: 15%;
   box-shadow: 0.31rem 0.625rem 0.875rem 0rem var(--oxy-blue-shadow);
+  transition: border 1000ms linear;
 }
 .return-top__icon {
   color: white;
