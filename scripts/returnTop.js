@@ -1,8 +1,6 @@
-let returnTopBtn = null;
-
 document.addEventListener("DOMContentLoaded", function() {
-
-    returnTopBtn = document.getElementById('return-top');
+    
+    const returnTopBtn = document.getElementById('return-top');
 
     returnTopBtn.addEventListener("click", () => {
         setTimeout(() => {
