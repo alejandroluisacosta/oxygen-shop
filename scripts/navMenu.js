@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
             hamburgerMenu.classList.toggle("closed");
         }
         else {
-            hamburgerMenu.style.cssText = "max-height: 6rem";
+            hamburgerMenu.style.cssText = "transition: max-height 300ms linear; max-height: 4.375rem;";
             header.style.cssText = "";
             logo[0].style.cssText = "";
             Array.from(listPage).forEach(element => {
