@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     hamburgerMenu.addEventListener("click", () => {
             if (window.innerWidth < 1000) {
                 if (hamburgerMenu.classList.contains("closed")) {
-                    hamburgerMenu.style.cssText = "max-height: 14.688rem; position: absolute; z-index: 1; padding-bottom: 1.188rem; background-color: white;";
+                    hamburgerMenu.style.cssText = "max-height: 14.688rem; z-index: 1; padding-bottom: 1.188rem; background-color: white;";
                     header.style.cssText = "padding-top: 10.625rem";
                     logo[0].style.cssText = "display: block; margin-bottom: 2.875rem";
                     Array.from(listPage).forEach(element => {

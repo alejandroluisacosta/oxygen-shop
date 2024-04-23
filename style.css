@@ -194,7 +194,7 @@ body {
 }
 .header {
   text-align: center;
-  padding-top: 6.25rem;
+  padding-top: 10rem;
   overflow: hidden;
 }
 .header__cta {
@@ -234,7 +234,7 @@ body {
 
 @media only screen and (min-width: 1000px) {
   .header {
-    padding-top: 8rem;
+    padding-top: 13rem;
   }
   .header__cta {
     margin-bottom: 0;
@@ -456,9 +456,10 @@ body {
 .nav {
   width: 100%;
   position: fixed;
+  z-index: 1;
+  background-color: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
   padding: 1em 1.5em;
-  position: relative;
   max-height: 4.375rem;
   transition: max-height 300ms linear;
 }
@@ -543,8 +544,6 @@ body {
   }
   .nav__content-container__list__page:hover {
     color: black;
-  }
-  .nav__content-container__list__page--active {
     border-bottom: 4px solid var(--oxy-blue);
   }
 }
