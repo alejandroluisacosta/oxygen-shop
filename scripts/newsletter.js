@@ -13,6 +13,18 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     newsletterCloseBtn.addEventListener("click", () => {
-        
+        newsletterPopUp.style.display = "none";
+    })
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            newsletterPopUp.style.display = "none";
+        }
+    })
+
+    document.addEventListener("click", (event) => {
+        if (event.target !== newsletterPopUp) {
+            newsletterPopUp.style.display = "none";
+        }
     })
 })
