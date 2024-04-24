@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const newsletterPopUp = document.getElementById("pop-up-modal");
     const newsletterCloseBtn = document.getElementById("pop-up-modal__close");
-    localStorage.setItem("newsletterShown", "false");
 
     setTimeout(() => {
         if (localStorage.getItem("newsletterShown") === "false") {
