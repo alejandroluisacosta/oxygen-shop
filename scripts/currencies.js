@@ -7,28 +7,26 @@ const fetchCurrencyExchanges = async (url) => {
         if (response.ok) {
             try {
                 const jsonData = await response.json();
-                usdExchangeObject = jsonData.usd;
-                console.log(usdExchangeObject);
+                usdExchangeObject = jsonData;
+                return jsonData.usd;
             }
             catch(error) { console.log(error); }
         }
     }
     catch(error) { console.log(error); }
 }
-fetchCurrencyExchanges(url);
+usdExchangeObject = fetchCurrencyExchanges(url);
 console.log(usdExchangeObject);
 
-document.addEventListener("DOMContentLoaded", function() {
-    const usdBtn = document.getElementById("usd");
-    const eurBtn = document.getElementById("eur");
-    const gbpBtn = document.getElementById("gbp");
-    const basicPrice = document.getElementById("basic");
-    const professionalPrice = document.getElementById("professional");
-    const premiumPrice = document.getElementById("premium");
+const usdBtn = document.getElementById("usd");
+const eurBtn = document.getElementById("eur");
+const gbpBtn = document.getElementById("gbp");
+const basicPrice = document.getElementById("basic");
+const professionalPrice = document.getElementById("professional");
+const premiumPrice = document.getElementById("premium");
 
-    eurBtn.addEventListener("click", () => {
-        eurExchangeRate = usdExchangeObject.eur;
-        console.log(eurExchangeRate);
-        professionalPrice.innerText = 25 * eurExchangeRate;
-    })
+eurBtn.addEventListener("click", async () => {
+    const response = await fetchCurrencyExchanges(url)
+    eurExchangeRate = response.eur;
+    professionalPrice.innerText = 25 * eurExchangeRate;
 })
