@@ -2,6 +2,7 @@ class Slider {
     constructor(id) {
         this._id = id;
         this._images = [];
+        this._currImgIndex = 0;
     }
     get id() {
         return this._id;
@@ -17,36 +18,30 @@ class Slider {
         this._images = images;
     }
 
-    carousel(currImgIndex) {
-        setTimeout(() => {
-            if (currImgIndex === this.images.length - 1) {
-                this.images[this.images.length - 1].classList.add("hidden");
-                this.images[0].classList.remove("hidden");
-                this.carousel(0);
-            }
-            else {
-                this.images[currImgIndex].classList.add("hidden");
-                this.images[currImgIndex + 1].classList.remove("hidden");
-                this.carousel(currImgIndex + 1);
-            }
-        }, 2000)
+    carousel() {
+            // if (currImgIndex === this.images.length - 1) {
+            //     this.images[this.images.length - 1].classList.add("hidden");
+            //     this.images[0].classList.remove("hidden");
+            // }
+            // else {
+            //     this.images[currImgIndex].classList.add("hidden");
+            //     this.images[currImgIndex + 1].classList.remove("hidden");
+            // }
+
+            const leftButton = document.getElementById("slider__btn-left");
+            const rightButton = document.getElementById("slider__btn-right");
+            
+            leftButton.addEventListener("click", () => {
+                slider.images[this._currImgIndex].classList.add("hidden");
+                if (this._currImgIndex === 0)
+                    this._currImgIndex = slider.images.length - 1;
+                else
+                    this._currImgIndex--;
+                slider.images[this._currImgIndex].classList.remove("hidden");
+            })
     }
 }
 const slider = new Slider("slider");
 
 slider.setImages();
-slider.carousel(0);
-
-const leftButton = document.getElementById("slider__btn-left");
-const rightButton = document.getElementById("slider__btn-right");
-
-leftButton.addEventListener("click", () => {
-    if (currImgIndex === 0) {
-        slider.images[0].classList.add("hidden");
-        slider.images[slider.images.length - 1].classList.remove("hidden");
-    }
-    else {
-        slider.images[currImgIndex].classList.add("hidden");
-        slider.images[currImgIndex - 1].classList.remove("hidden");
-    }
-})
+slider.carousel();
