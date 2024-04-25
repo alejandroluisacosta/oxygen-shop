@@ -24,8 +24,27 @@ const premiumPrice = document.getElementById("premium");
 const currenciesContainerMobile = document.getElementById("pricing__currencies-mobile");
 const currenciesContainerDesktop = document.getElementById("pricing__currencies-desktop");
 
-currenciesContainerMobile.addEventListener("change", () => {
-    
+currenciesContainerMobile.addEventListener("change", async (event) => {
+    if (event.target.value === "EUR") {
+        const response = await fetchCurrencyExchanges(url)
+        eurExchangeRate = response.eur;
+        basicPrice.innerText = "0€";
+        professionalPrice.innerText = (25 * eurExchangeRate).toFixed(2) + "€";
+        premiumPrice.innerText = (60 * eurExchangeRate).toFixed(2) + "€";
+    }
+    else if (event.target.value === "GBP") {
+        const response = await fetchCurrencyExchanges(url)
+        gbpExchangeRate = response.gbp;
+        basicPrice.innerText = "£0";
+        professionalPrice.innerText = "£" + (25 * gbpExchangeRate).toFixed(2);
+        premiumPrice.innerText = "£" + (60 * gbpExchangeRate).toFixed(2);
+    }
+    else {
+        const response = await fetchCurrencyExchanges(url)
+        basicPrice.innerText = "$0";
+        professionalPrice.innerText = "$25";
+        premiumPrice.innerText = "$60";
+    }
 })
 
 if (window.innerWidth >= 1000) {
