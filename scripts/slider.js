@@ -17,25 +17,36 @@ class Slider {
         this._images = images;
     }
 
-    carrousel(currImgIndex) {
+    carousel(currImgIndex) {
         setTimeout(() => {
             if (currImgIndex === this.images.length - 1) {
                 this.images[this.images.length - 1].classList.add("hidden");
                 this.images[0].classList.remove("hidden");
-                this.carrousel(0);
+                this.carousel(0);
             }
             else {
                 this.images[currImgIndex].classList.add("hidden");
                 this.images[currImgIndex + 1].classList.remove("hidden");
-                this.carrousel(currImgIndex + 1);
+                this.carousel(currImgIndex + 1);
             }
-            
         }, 2000)
     }
-
-
 }
 const slider = new Slider("slider");
 
 slider.setImages();
-slider.carrousel(0);
+slider.carousel(0);
+
+const leftButton = document.getElementById("slider__btn-left");
+const rightButton = document.getElementById("slider__btn-right");
+
+leftButton.addEventListener("click", () => {
+    if (currImgIndex === 0) {
+        slider.images[0].classList.add("hidden");
+        slider.images[slider.images.length - 1].classList.remove("hidden");
+    }
+    else {
+        slider.images[currImgIndex].classList.add("hidden");
+        slider.images[currImgIndex - 1].classList.remove("hidden");
+    }
+})
