@@ -11,32 +11,31 @@ class Slider {
         return this._images;
     }
 
-    getImages() {
+    setImages() {
         const slider = document.getElementById(this.id);
-        for (let i = 0; i < slider.children.length; i++) {
-            if (!(slider.children[i].classList.contains("slider__btn-left") || slider.children[i].classList.contains("slider__btn-right"))) {
-                const image = slider.children[i];
-                this.images.push(image);
-        }}
-        return this.images;
+        const images = Array.from(slider.children);
+        this._images = images;
     }
 
     carrousel(currImgIndex) {
-        setTimeout((currImgIndex) => {
+        setTimeout(() => {
             if (currImgIndex === this.images.length - 1) {
                 this.images[this.images.length - 1].classList.add("hidden");
-                this.images[0].classList.currImgIndex("hidden");
+                this.images[0].classList.remove("hidden");
                 this.carrousel(0);
             }
             else {
                 this.images[currImgIndex].classList.add("hidden");
-                this.images[currImgIndex + 1].classList.currImgIndex("hidden");
-                this.carrousel[currImgIndex + 1];
+                this.images[currImgIndex + 1].classList.remove("hidden");
+                this.carrousel(currImgIndex + 1);
             }
             
-        }, 3000)
+        }, 2000)
     }
-}
-const test = new Slider("slider");
 
-console.log(test.getImages())
+
+}
+const slider = new Slider("slider");
+
+slider.setImages();
+slider.carrousel(0);
