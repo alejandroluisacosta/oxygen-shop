@@ -17,7 +17,6 @@ const fetchCurrencyExchanges = async (url) => {
 }
 usdExchangeObject = fetchCurrencyExchanges(url);
 
-
 const basicPrice = document.getElementById("basic");
 const professionalPrice = document.getElementById("professional");
 const premiumPrice = document.getElementById("premium");

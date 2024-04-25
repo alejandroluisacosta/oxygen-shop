@@ -936,4 +936,34 @@ body {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
+.slider {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.slider__btn-left {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  border-radius: 50%;
+  padding: 2%;
+  cursor: pointer;
+}
+.slider__btn-right {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  border-radius: 50%;
+  padding: 2%;
+  cursor: pointer;
+}
+.slider__image {
+  width: 90%;
+}
+
 /*# sourceMappingURL=style.css.map */
