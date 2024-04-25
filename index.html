@@ -130,11 +130,17 @@
     </main>
     <section class="pricing" id="pricing">
         <h2 class="pricing__title">Pricing</h2>
+        <select class="pricing__currencies--mobile" id="pricing__currencies-mobile">
+            <option class="pricing__currencies__button" id="usd">USD</option>
+            <option class="pricing__currencies__button" id="eur">EUR</option>
+            <option class="pricing__currencies__button" id="gbp">GBP</option>
+        </select>
+        <div class="pricing__currencies pricing__currencies--desktop hidden" id="pricing__currencies-desktop"></div>
         <div class="pricing__tier-container">
             <article class="pricing__tier-container__tier pricing__tier-container__tier--basic ">
                 <div class="pricing__tier-container__tier__left-side pricing__tier-container__tier__left-side--1">
                     <p class="pricing__tier-container__tier__left-side__name">Basic</p>
-                    <p class="pricing__tier-container__tier__left-side__price pricing__tier-container__tier__left-side__price--1">$0</p>
+                    <p class="pricing__tier-container__tier__left-side__price pricing__tier-container__tier__left-side__price--1" id="basic">$0</p>
                 </div> 
                 <ul class="pricing__tier-container__tier__list">
                     <li class="pricing__tier-container__tier__list__item pricing__tier-container__tier__list__item--checkbox"><img src="./resources/checked-benefit.svg" alt="Available Benefit"/>100MB HDD</li>
@@ -147,8 +153,8 @@
             </article>
             <article class="pricing__tier-container__tier pricing__tier-container__tier--professional">
                 <div class="pricing__tier-container__tier__left-side">
-                    <p class="pricing__tier-container__tier__left-side__name">Professional</p>
-                    <p class="pricing__tier-container__tier__left-side__price pricing__tier-container__tier__left-side__price--2">$25</p>
+                    <p class="pricing__tier-container__tier__left-side__name" >Professional</p>
+                    <p class="pricing__tier-container__tier__left-side__price pricing__tier-container__tier__left-side__price--2" id="professional">$25</p>
                     <p class="pricing__tier-container__tier__left-side__limited">Limited offer</p>
                 </div>
                 <ul class="pricing__tier-container__tier__list">
@@ -162,8 +168,8 @@
             </article>
             <article class="pricing__tier-container__tier pricing__tier-container__tier--premium">
                 <div class="pricing__tier-container__tier__left-side">
-                    <p class="pricing__tier-container__tier__left-side__name">Premium</p>
-                    <p class="pricing__tier-container__tier__left-side__price pricing__tier-container__tier__left-side__price--3">$60</p>
+                    <p class="pricing__tier-container__tier__left-side__name" >Premium</p>
+                    <p class="pricing__tier-container__tier__left-side__price pricing__tier-container__tier__left-side__price--3" id="premium">$60</p>
                     <p class="pricing__tier-container__tier__left-side__limited">Limited offer</p>
                 </div>
                 <ul class="pricing__tier-container__tier__list">
@@ -223,5 +229,6 @@
     <script src="./scripts/percentageScroller.js"></script>
     <script src="./scripts/formValidation.js"></script>
     <script src="./scripts/newsletter.js"></script>
+    <script src="./scripts/currencies.js"></script>
 </body>
 </html>

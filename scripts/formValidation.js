@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const checkValues = () => {
             if (userName.length < 2 || userName.length > 100) {
-                nameInput.style.cssText = "border-bottom: 1.5px solid red";
+                nameInput.style.cssText = "border-bottom: 1.5px solid red"; // Dar estilos con una clase aparte
                 alert("Enter a valid name (Between 2 and 100 characters)");
-                return false;
+                return false; // Mostrar todos los errores en un solo alert
             }
             else {
                 nameInput.style.cssText = "";
