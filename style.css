@@ -902,11 +902,35 @@ body {
   display: none;
 }
 
+.selected {
+  background-color: #08A6E4 !important;
+  color: white !important;
+}
+
+.pricing__currencies--mobile {
+  margin-bottom: 1rem;
+  padding: 0.5rem 2rem;
+  background-color: #08A6E4;
+  box-shadow: 0.31rem 0.625rem 0.875rem 0rem rgba(7, 172, 230, 0.2901960784);
+  border: 0;
+  color: white;
+  border-radius: 1.438rem;
+  font-family: "Open Sans";
+  cursor: pointer;
+}
+.pricing__currencies--desktop {
+  display: flex;
+  padding-left: 25%;
+  padding-right: 25%;
+  justify-content: space-between;
+}
 .pricing__currencies__button {
   margin-bottom: 3.125rem;
-  color: white;
+  color: #08A6E4;
+  background-color: white;
   padding: 1rem 3.598rem;
-  border: 0;
+  border: 1px solid #08A6E4;
+  box-shadow: 0.31rem 0.625rem 0.875rem 0rem rgba(7, 172, 230, 0.2901960784);
   border-radius: 1.438rem;
   font-family: "Open Sans";
   cursor: pointer;

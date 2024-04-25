@@ -29,15 +29,15 @@ currenciesContainerMobile.addEventListener("change", async (event) => {
         const response = await fetchCurrencyExchanges(url)
         eurExchangeRate = response.eur;
         basicPrice.innerText = "0€";
-        professionalPrice.innerText = (25 * eurExchangeRate).toFixed(2) + "€";
-        premiumPrice.innerText = (60 * eurExchangeRate).toFixed(2) + "€";
+        professionalPrice.innerText = (25 * eurExchangeRate).toFixed(1) + "€";
+        premiumPrice.innerText = (60 * eurExchangeRate).toFixed(1) + "€";
     }
     else if (event.target.value === "GBP") {
         const response = await fetchCurrencyExchanges(url)
         gbpExchangeRate = response.gbp;
         basicPrice.innerText = "£0";
-        professionalPrice.innerText = "£" + (25 * gbpExchangeRate).toFixed(2);
-        premiumPrice.innerText = "£" + (60 * gbpExchangeRate).toFixed(2);
+        professionalPrice.innerText = "£" + (25 * gbpExchangeRate).toFixed(1);
+        premiumPrice.innerText = "£" + (60 * gbpExchangeRate).toFixed(1);
     }
     else {
         const response = await fetchCurrencyExchanges(url)
@@ -55,6 +55,7 @@ if (window.innerWidth >= 1000) {
     usdBtn.innerText = "USD";
     usdBtn.id = "usd";
     usdBtn.classList.add("pricing__currencies__button");
+    usdBtn.classList.add("selected");
 
     const eurBtn = document.createElement("button");
     eurBtn.innerText = "EUR";
@@ -76,6 +77,9 @@ if (window.innerWidth >= 1000) {
         basicPrice.innerText = "0€";
         professionalPrice.innerText = (25 * eurExchangeRate).toFixed(2) + "€";
         premiumPrice.innerText = (60 * eurExchangeRate).toFixed(2) + "€";
+        eurBtn.classList.add("selected");
+        usdBtn.classList.remove("selected");
+        gbpBtn.classList.remove("selected");
     })
     
     gbpBtn.addEventListener("click", async () => {
@@ -84,6 +88,9 @@ if (window.innerWidth >= 1000) {
         basicPrice.innerText = "£0";
         professionalPrice.innerText = "£" + (25 * gbpExchangeRate).toFixed(2);
         premiumPrice.innerText = "£" + (60 * gbpExchangeRate).toFixed(2);
+        gbpBtn.classList.add("selected");
+        usdBtn.classList.remove("selected");
+        eurBtn.classList.remove("selected");
     })
     
     usdBtn.addEventListener("click", async () => {
@@ -91,6 +98,9 @@ if (window.innerWidth >= 1000) {
         basicPrice.innerText = "$0";
         professionalPrice.innerText = "$25";
         premiumPrice.innerText = "$60";
+        usdBtn.classList.add("selected");
+        eurBtn.classList.remove("selected");
+        gbpBtn.classList.remove("selected");
     })
 }
 
