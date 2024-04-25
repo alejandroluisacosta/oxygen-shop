@@ -16,7 +16,6 @@ const fetchCurrencyExchanges = async (url) => {
     catch(error) { console.log(error); }
 }
 usdExchangeObject = fetchCurrencyExchanges(url);
-console.log(usdExchangeObject);
 
 const usdBtn = document.getElementById("usd");
 const eurBtn = document.getElementById("eur");
@@ -28,5 +27,22 @@ const premiumPrice = document.getElementById("premium");
 eurBtn.addEventListener("click", async () => {
     const response = await fetchCurrencyExchanges(url)
     eurExchangeRate = response.eur;
-    professionalPrice.innerText = 25 * eurExchangeRate;
+    basicPrice.innerText = "0€";
+    professionalPrice.innerText = (25 * eurExchangeRate).toFixed(2) + "€";
+    premiumPrice.innerText = (60 * eurExchangeRate).toFixed(2) + "€";
+})
+
+gbpBtn.addEventListener("click", async () => {
+    const response = await fetchCurrencyExchanges(url)
+    gbpExchangeRate = response.gbp;
+    basicPrice.innerText = "£0";
+    professionalPrice.innerText = "£" + (25 * gbpExchangeRate).toFixed(2);
+    premiumPrice.innerText = "£" + (60 * gbpExchangeRate).toFixed(2);
+})
+
+usdBtn.addEventListener("click", async () => {
+    const response = await fetchCurrencyExchanges(url)
+    basicPrice.innerText = "$0";
+    professionalPrice.innerText = "$25";
+    premiumPrice.innerText = "$60";
 })
