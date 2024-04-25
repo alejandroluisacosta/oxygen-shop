@@ -898,6 +898,10 @@ body {
     cursor: pointer;
   }
 }
+.hidden {
+  display: none;
+}
+
 .pricing__currencies__button {
   margin-bottom: 3.125rem;
   color: white;
