@@ -30,8 +30,6 @@ class Slider {
                 else
                     this._currImgIndex--;
                 slider.images[this._currImgIndex].classList.remove("hidden");
-                clearInterval(carouselInterval);
-                console.log(this._currImgIndex);
             })
 
             rightButton.addEventListener("click", () => {
@@ -41,8 +39,6 @@ class Slider {
                 else
                     this._currImgIndex++;
                 slider.images[this._currImgIndex].classList.remove("hidden");
-                clearInterval(carouselInterval);
-                console.log(this._currImgIndex);
             })
 
             let carouselInterval = setInterval(() => {
@@ -52,7 +48,6 @@ class Slider {
                 else
                     this._currImgIndex++;
                 slider.images[this._currImgIndex].classList.remove("hidden");
-                console.log(this._currImgIndex);
             }, 2000);
     }
 }

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'/>
     <style>
         .material-symbols-outlined {
           font-variation-settings:
@@ -184,8 +185,16 @@
         </div>
     </section>
     <div class="slider">
-        <button class="slider__btn-left" id="slider__btn-left">></button>
-        <button class="slider__btn-right" id="slider__btn-right">></button>
+        <button class="slider__btn slider__btn--left" id="slider__btn-left">
+            <span class="slider__btn__icon material-symbols-outlined">
+                arrow_back_ios_new
+            </span>
+        </button>
+        <button class="slider__btn slider__btn--right" id="slider__btn-right">
+            <span class="slider__btn__icon material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+        </button>
         <div class="slider__image-container" id="slider">
             <img class="slider__image-container__image" src="./resources/surprised.jpeg"/>
             <img class="slider__image-container__image hidden" src="./resources/starring_at_pc.jpeg"/>
