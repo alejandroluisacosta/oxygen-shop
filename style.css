@@ -816,6 +816,7 @@ body {
   }
 }
 .return-top {
+  display: none;
   position: fixed;
   z-index: 1;
   right: 5%;
@@ -830,6 +831,10 @@ body {
 }
 .return-top__icon {
   color: white;
+}
+
+.shown {
+  display: block;
 }
 
 @media only screen and (min-width: 1000px) {
