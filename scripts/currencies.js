@@ -46,7 +46,7 @@ currenciesContainerMobile.addEventListener("change", async (event) => {
     }
 })
 
-if (window.innerWidth >= 1000) {
+if (window.innerWidth >= 1000) { // Pasar a media query
     currenciesContainerMobile.classList.add("hidden");
     currenciesContainerDesktop.classList.remove("hidden");
 

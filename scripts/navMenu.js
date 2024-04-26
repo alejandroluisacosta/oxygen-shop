@@ -1,5 +1,3 @@
-
-
 const hamburgerMenu = document.getElementById("nav");
 const header = document.getElementById("header");
 const logo = document.getElementsByClassName("nav__content-container__logo");
