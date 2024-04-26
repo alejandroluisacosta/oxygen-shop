@@ -39,6 +39,15 @@ class Slider {
                     this._currImgIndex--;
                 slider.images[this._currImgIndex].classList.remove("hidden");
             })
+
+            rightButton.addEventListener("click", () => {
+                slider.images[this._currImgIndex].classList.add("hidden");
+                if (this._currImgIndex === slider.images.length - 1)
+                    this._currImgIndex = 0;
+                else
+                    this._currImgIndex++;
+                slider.images[this._currImgIndex].classList.remove("hidden");
+            })
     }
 }
 const slider = new Slider("slider");
