@@ -19,14 +19,6 @@ class Slider {
     }
 
     carousel() {
-            // if (currImgIndex === this.images.length - 1) {
-            //     this.images[this.images.length - 1].classList.add("hidden");
-            //     this.images[0].classList.remove("hidden");
-            // }
-            // else {
-            //     this.images[currImgIndex].classList.add("hidden");
-            //     this.images[currImgIndex + 1].classList.remove("hidden");
-            // }
 
             const leftButton = document.getElementById("slider__btn-left");
             const rightButton = document.getElementById("slider__btn-right");
@@ -38,6 +30,8 @@ class Slider {
                 else
                     this._currImgIndex--;
                 slider.images[this._currImgIndex].classList.remove("hidden");
+                clearInterval(carouselInterval);
+                console.log(this._currImgIndex);
             })
 
             rightButton.addEventListener("click", () => {
@@ -47,7 +41,19 @@ class Slider {
                 else
                     this._currImgIndex++;
                 slider.images[this._currImgIndex].classList.remove("hidden");
+                clearInterval(carouselInterval);
+                console.log(this._currImgIndex);
             })
+
+            let carouselInterval = setInterval(() => {
+                slider.images[this._currImgIndex].classList.add("hidden");
+                if (this._currImgIndex === slider.images.length - 1)
+                    this._currImgIndex = 0;
+                else
+                    this._currImgIndex++;
+                slider.images[this._currImgIndex].classList.remove("hidden");
+                console.log(this._currImgIndex);
+            }, 2000);
     }
 }
 const slider = new Slider("slider");
