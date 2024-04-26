@@ -871,6 +871,9 @@ body {
   border: none;
   border-bottom: 1px solid var(--input-border-color);
 }
+.pop-up-modal__policies {
+  margin-bottom: 1rem;
+}
 .pop-up-modal__button {
   margin-top: 0.5rem;
   border-radius: 2.5rem;

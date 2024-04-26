@@ -45,7 +45,6 @@ export const submitForm = (userName, userEmail) => {
 document.querySelector("form").addEventListener("submit", (event) => {
     const nameInput = document.getElementById("name");
     const userName = nameInput.value;
-    console.log(userName);
     const emailInput = document.getElementById("email");
     const userEmail = emailInput.value;
     const checkbox = document.getElementById("policies-check");
