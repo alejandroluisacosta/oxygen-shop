@@ -22,7 +22,7 @@
     <title>OxygenShop</title>
 </head>
 <body>
-    <div class="pop-up-modal" id="pop-up-modal">
+    <dialog class="pop-up-modal" id="pop-up-modal">
         <p class="pop-up-modal__title">Increase your sales by <strong>15% in only three weeks</strong></p>
         <span class="pop-up-modal__close material-symbols-outlined" id="pop-up-modal__close">
             close
@@ -32,8 +32,14 @@
         <input class="pop-up-modal__input" type="text" id="newsletterNameInput"/>
         <label class="pop-up-modal__label" for="newsletterEmailInput" id="newsletterEmailLabel">Email:</label>
         <input class="pop-up-modal__input" type="text" id="newsletterEmailInput"/>
-        <button class="pop-up-modal__button" type="submit" id="newsletterSubmitBtn">Get free eBook</button>
-    </div>
+        <div class="pop-up-modal__policies">
+            <input type="checkbox" id="newsletterPoliciesCheck" class="pop-up-modal__policies__checkbox">
+            <label class="pop-up-modal__policies__text">I accept Oxygen Shop's terms and conditions</label>
+        </div>
+        <div class="pop-up-modal__button-container">
+            <button class="pop-up-modal__button-container__button" type="submit" id="newsletterSubmitBtn">Get free eBook</button>
+        </div>
+    </dialog>
     <nav class="nav closed" id="nav">
         <div class="nav__content-container">
             <p class="nav__content-container__logo">OXYGEN Shop</p>
@@ -248,8 +254,8 @@
     <script src="./scripts/returnTop.js"></script>
     <script src="./scripts/navMenu.js"></script>
     <script src="./scripts/percentageScroller.js"></script>
-    <script src="./scripts/formValidation.js"></script>
-    <script src="./scripts/newsletter.js"></script>
+    <script type="module" src="./scripts/formValidation.js"></script>
+    <script type="module" src="./scripts/newsletter.js"></script>
     <script src="./scripts/currencies.js"></script>
     <script src="./scripts/slider.js"></script>
 </body>

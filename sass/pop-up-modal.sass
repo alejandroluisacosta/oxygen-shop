@@ -27,14 +27,19 @@
         margin-bottom: 1rem
         border: none
         border-bottom: 1px solid var(--input-border-color)
-    &__button
-        margin-top: 0.5rem
-        border-radius: 2.5rem
-        color: white
-        background-color: var(--oxy-light-blue)
-        border: 0
-        padding: 0.5rem 2rem
-        box-shadow: 0.31rem 0.625rem 0.875rem 0rem var(--oxy-blue-shadow)
+    &__policies
+        margin-bottom: 1rem
+    &__button-container
+        display: flex
+        justify-content: center
+        &__button
+            margin-top: 0.5rem
+            border-radius: 2.5rem
+            color: white
+            background-color: var(--oxy-light-blue)
+            border: 0
+            padding: 0.5rem 2rem
+            box-shadow: 0.31rem 0.625rem 0.875rem 0rem var(--oxy-blue-shadow)
 
 @media only screen and (min-width: 1000px)
     .pop-up-modal
@@ -46,6 +51,9 @@
             right: 3rem
             top: 3rem
             cursor: pointer
-        &__button
-            cursor: pointer
+        &__button-container
+            &__button
+                font-size: 1rem
+                padding: 3% 5%
+                cursor: pointer
 
