@@ -881,7 +881,11 @@ body {
 .pop-up-modal__policies {
   margin-bottom: 1rem;
 }
-.pop-up-modal__button {
+.pop-up-modal__button-container {
+  display: flex;
+  justify-content: center;
+}
+.pop-up-modal__button-container__button {
   margin-top: 0.5rem;
   border-radius: 2.5rem;
   color: white;
@@ -904,7 +908,9 @@ body {
     top: 3rem;
     cursor: pointer;
   }
-  .pop-up-modal__button {
+  .pop-up-modal__button-container__button {
+    font-size: 1rem;
+    padding: 3% 5%;
     cursor: pointer;
   }
 }
