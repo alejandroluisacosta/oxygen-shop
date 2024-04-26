@@ -478,11 +478,13 @@ body {
   color: var(--oxy-light-blue);
   opacity: 1;
   transition: opacity 300ms linear;
+  cursor: pointer;
 }
 .nav__content-container__close {
   visibility: hidden;
   opacity: 0;
   transition: opacity 300ms linear;
+  cursor: pointer;
 }
 .nav__content-container__list {
   display: inline-block;
