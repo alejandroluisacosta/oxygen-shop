@@ -7,7 +7,7 @@ const closeIcon = document.getElementsByClassName("nav__content-container__close
 
 hamburgerIcon[0].addEventListener("click", () => {
     if (window.innerWidth < 1000) {
-        hamburgerMenu.style.cssText = "max-height: 14.688rem; z-index: 1; padding-bottom: 1.188rem; background-color: white;";
+        hamburgerMenu.classList.add("nav--open");
         header.style.cssText = "padding-top: 10.625rem";
         logo[0].style.cssText = "display: block; margin-bottom: 2.875rem";
         Array.from(listPage).forEach(element => {

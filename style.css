@@ -471,6 +471,12 @@ body {
   max-height: 4.375rem;
   transition: max-height 300ms linear;
 }
+.nav--open {
+  max-height: 14.688rem;
+  z-index: 1;
+  padding-bottom: 1.188rem;
+  background-color: white;
+}
 .nav__content-container__logo {
   display: inline-block;
   color: var(--oxy-light-blue);
