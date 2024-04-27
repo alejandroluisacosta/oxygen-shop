@@ -3,7 +3,15 @@ import { submitForm, checkValues } from "./formValidation.js";
 const newsletterPopUp = document.getElementById("pop-up-modal");
 const newsletterCloseBtn = document.getElementById("pop-up-modal__close");
 const newsletterSubmitBtn = document.getElementById("newsletterSubmitBtn");
-console.log(newsletterSubmitBtn);
+const newsletterTitle = document.getElementById("newsletterTitle");
+const newsletterDescription = document.getElementById("newsletterDescription");
+const newsletterNameInput = document.getElementById("newsletterNameInput");
+const newsletterNameLabel = document.getElementById("newsletterNameLabel");
+const newsletterEmailLabel = document.getElementById("newsletterEmailLabel");
+const newsletterEmailInput = document.getElementById("newsletterEmailInput");
+const newsletterPoliciesCheck = document.getElementById("newsletterPoliciesCheck");
+const newsletterPoliciesText = document.getElementById("newsletterPoliciesText");
+const newsletterButtonContainer = document.getElementById("newsletterButtonContainer");
 
 setTimeout(() => {
     if (localStorage.getItem("newsletterShown") === "false") {
@@ -37,9 +45,7 @@ document.addEventListener("keydown", (event) => {
 //     }
 // })
 
-newsletterPopUp.addEventListener("submit", () => {
-
-})
+for ()
 
 newsletterSubmitBtn.addEventListener("click", (event) => {
     const nameInput = document.getElementById("newsletterNameInput");

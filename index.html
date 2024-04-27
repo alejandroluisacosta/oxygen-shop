@@ -19,24 +19,32 @@
           'opsz' 24
         }
     </style>
+    <script defer src="./scripts/returnTop.js"></script>
+    <script defer src="./scripts/navMenu.js"></script>
+    <script defer src="./scripts/percentageScroller.js"></script>
+    <script defer type="module" src="./scripts/formValidation.js"></script>
+    <script defer type="module" src="./scripts/newsletter.js"></script>
+    <script defer src="./scripts/currencies.js"></script>
+    <script defer src="./scripts/slider.js"></script>
+    <script defer type="module" src="./scripts/contact.js"></script>
     <title>OxygenShop</title>
 </head>
 <body>
     <dialog class="pop-up-modal" id="pop-up-modal">
-        <p class="pop-up-modal__title">Increase your sales by <strong>15% in only three weeks</strong></p>
+        <p class="pop-up-modal__title" id="newsletterTitle">Increase your sales by <strong>15% in only three weeks</strong></p>
         <span class="pop-up-modal__close material-symbols-outlined" id="pop-up-modal__close">
             close
         </span>
-        <p class="pop-up-modal__description">Subscribe to our newsletter and get exclusive access to our "10 Secrets for the Master Online Seller" <strong>eBook for free</strong></p>
+        <p class="pop-up-modal__description" id="newsletterDescription">Subscribe to our newsletter and get exclusive access to our "10 Secrets for the Master Online Seller" <strong>eBook for free</strong></p>
         <label class="pop-up-modal__label" for="newsletterNameInput" id="newsletterNameLabel">First name:</label>
         <input class="pop-up-modal__input" type="text" id="newsletterNameInput"/>
         <label class="pop-up-modal__label" for="newsletterEmailInput" id="newsletterEmailLabel">Email:</label>
         <input class="pop-up-modal__input" type="text" id="newsletterEmailInput"/>
         <div class="pop-up-modal__policies">
             <input type="checkbox" id="newsletterPoliciesCheck" class="pop-up-modal__policies__checkbox">
-            <label class="pop-up-modal__policies__text">I accept Oxygen Shop's terms and conditions</label>
+            <label class="pop-up-modal__policies__text" id="newsletterPoliciesText">I accept Oxygen Shop's terms and conditions</label>
         </div>
-        <div class="pop-up-modal__button-container">
+        <div class="pop-up-modal__button-container" id="newsletterButtonContainer">
             <button class="pop-up-modal__button-container__button" type="submit" id="newsletterSubmitBtn">Get free eBook</button>
         </div>
     </dialog>
@@ -226,14 +234,14 @@
         <form class="contact__form">
             <div class="contact__form__input-container">
                 <label for="name" class="contact__form__input-container__label">NAME</label><br>
-                <input type="text" id="name" class="contact__form__input-container__input contact__form__input-container__input--1">
+                <input type="text" id="contact-name" class="contact__form__input-container__input contact__form__input-container__input--1">
             </div>
             <div class="contact__form__input-container">
                 <label for="email" class="contact__form__input-container__label">EMAIL</label><br>
-                <input type="text" id="email" class="contact__form__input-container__input contact__form__input-container__input--2">
+                <input type="text" id="contact-email" class="contact__form__input-container__input contact__form__input-container__input--2">
             </div>
             <div class="contact__form__policies">
-                <input type="checkbox" id="policies-check" class="contact__form__policies__check">
+                <input type="checkbox" id="contact-policies-check" class="contact__form__policies__check">
                 <label class="contact__form__policies__text">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</label>
             </div>
             <div class="contact__form__button-container">
@@ -251,12 +259,5 @@
             <img class="footer__social__icon--facebook" src="./resources/facebook.png"/>
         </div>
     </footer>
-    <script src="./scripts/returnTop.js"></script>
-    <script src="./scripts/navMenu.js"></script>
-    <script src="./scripts/percentageScroller.js"></script>
-    <script type="module" src="./scripts/formValidation.js"></script>
-    <script type="module" src="./scripts/newsletter.js"></script>
-    <script src="./scripts/currencies.js"></script>
-    <script src="./scripts/slider.js"></script>
 </body>
 </html>

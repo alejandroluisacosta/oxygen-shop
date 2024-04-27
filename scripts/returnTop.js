@@ -1,4 +1,3 @@
-
 const returnTopBtn = document.getElementById('return-top');
 const body = document.querySelector("body");
 

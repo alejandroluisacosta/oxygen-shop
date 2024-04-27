@@ -15,7 +15,6 @@ const fetchCurrencyExchanges = async (url) => {
     }
     catch(error) { console.log(error); }
 }
-usdExchangeObject = fetchCurrencyExchanges(url);
 
 const basicPrice = document.getElementById("basic");
 const professionalPrice = document.getElementById("professional");
@@ -46,7 +45,7 @@ currenciesContainerMobile.addEventListener("change", async (event) => {
     }
 })
 
-if (window.innerWidth >= 1000) {
+if (window.innerWidth >= 1000) { // Pasar a media query
     currenciesContainerMobile.classList.add("hidden");
     currenciesContainerDesktop.classList.remove("hidden");
 
