@@ -1,20 +1,20 @@
 export const checkValues = (nameInput, userName, emailInput, userEmail, checkbox) => {
     console.log(userName.length);
     if (userName.length < 2 || userName.length > 100) {
-        nameInput.style.cssText = "border-bottom: 1.5px solid red"; // Dar estilos con una clase aparte
+        nameInput.classList.add("input--rejected") // Dar estilos con una clase aparte
         alert("Enter a valid name (Between 2 and 100 characters)");
         return false; // Mostrar todos los errores en un solo alert
     }
 
     const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     if (!emailRegex.test(userEmail)) {
-        emailInput.style.cssText = "border-bottom: 1.5px solid red";
+        emailInput.classList.add("input--rejected")
         alert("Enter a valid email");
         return false;
     }
 
     if (!checkbox.checked) {
-        checkbox.style.cssText = "outline: 1.5px solid red;";
+        checkbox.classList.add("policies-check--rejected")
         alert("You need to agree to Oxygen Shop's terms and conditions")
         return false;
     }
@@ -42,21 +42,21 @@ export const submitForm = (userName, userEmail) => {
         .catch((error) => console.error('Error:', error));
 }
 
-document.querySelector("form").addEventListener("submit", (event) => {
-    const nameInput = document.getElementById("name");
+document.getElementById("contact").addEventListener("submit", (event) => {
+    const nameInput = document.getElementById("contact-name");
     const userName = nameInput.value;
-    const emailInput = document.getElementById("email");
+    const emailInput = document.getElementById("contact-email");
     const userEmail = emailInput.value;
-    const checkbox = document.getElementById("policies-check");
+    const checkbox = document.getElementById("contact-policies-check");
 
     event.preventDefault();
 
     const checked = checkValues(nameInput, userName, emailInput, userEmail, checkbox);
     if (checked) {
         submitForm(userName, userEmail);
-        nameInput.style.cssText = "";
-        emailInput.style.cssText = "";
-        checkbox.style.cssText = "";
+        nameInput.classList.remove("input--rejected");
+        emailInput.classList.remove("input--rejected");
+        checkbox.classList.remove("policies-check--rejected");
         nameInput.value = "";
         emailInput.value = "";
         checkbox.checked = false;

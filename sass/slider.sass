@@ -23,16 +23,22 @@
             right: 10%
         &__icon
             color: white
-            font-size: 16px
+            font-size: 1rem
     &__image-container
         display: flex
         justify-content: center
         &__image
-            width: 90vw
+            width: 100%
 
 @media only screen and (min-width: 1000px)
     .slider
         &__btn
             padding: 1.5% 1.5%
+            &--left
+                left: 30%
+            &--right
+                right: 30%
             &__icon
                 font-size: 24px
+        &__image-container
+            height: 500px

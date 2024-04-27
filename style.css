@@ -29,6 +29,14 @@ body {
   --input-border-color: #95989A;
 }
 
+.input--rejected {
+  border-bottom: 1.5px solid red !important;
+}
+
+.policies-check--rejected {
+  outline: 1.5px solid red !important;
+}
+
 .contact {
   padding-left: 1.625rem;
   padding-right: 2.06rem;
@@ -985,22 +993,31 @@ body {
 }
 .slider__btn__icon {
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .slider__image-container {
   display: flex;
   justify-content: center;
 }
 .slider__image-container__image {
-  width: 90vw;
+  width: 100%;
 }
 
 @media only screen and (min-width: 1000px) {
   .slider__btn {
     padding: 1.5% 1.5%;
   }
+  .slider__btn--left {
+    left: 30%;
+  }
+  .slider__btn--right {
+    right: 30%;
+  }
   .slider__btn__icon {
     font-size: 24px;
+  }
+  .slider__image-container {
+    height: 500px;
   }
 }
 
