@@ -1014,16 +1014,25 @@ body {
     padding: 1.5% 1.5%;
   }
   .slider__btn--left {
-    left: 30%;
+    left: 15%;
   }
   .slider__btn--right {
-    right: 30%;
+    right: 15%;
   }
   .slider__btn__icon {
     font-size: 24px;
   }
   .slider__image-container {
+    width: 1000px;
     height: 500px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .slider__btn--left {
+    left: 25%;
+  }
+  .slider__btn--right {
+    right: 25%;
   }
 }
 
