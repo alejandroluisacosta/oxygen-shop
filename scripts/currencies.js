@@ -7,6 +7,7 @@ const fetchCurrencyExchanges = async (url) => {
         if (response.ok) {
             try {
                 const jsonData = await response.json();
+                usdExchangeObject = jsonData;
                 return jsonData.usd;
             }
             catch(error) { console.log(error); }
