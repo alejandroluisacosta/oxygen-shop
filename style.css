@@ -205,6 +205,9 @@ body {
   padding-top: 10rem;
   overflow: hidden;
 }
+.header--nav-open {
+  padding-top: 10.625rem;
+}
 .header__cta {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -485,6 +488,10 @@ body {
   font-family: Raleway;
   cursor: pointer;
 }
+.nav__content-container__logo--open {
+  display: block;
+  margin-bottom: 2.875rem;
+}
 .nav__content-container__menu {
   position: absolute;
   right: 1.875rem;
@@ -494,11 +501,24 @@ body {
   transition: opacity 300ms linear;
   cursor: pointer;
 }
+.nav__content-container__menu--open {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
 .nav__content-container__close {
+  right: 1.875rem;
+  top: 1.5rem;
   visibility: hidden;
   opacity: 0;
   transition: opacity 300ms linear;
   cursor: pointer;
+  color: var(--oxy-light-blue);
+}
+.nav__content-container__close--open {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
 }
 .nav__content-container__list {
   display: inline-block;
@@ -509,6 +529,9 @@ body {
   color: var(--oxy-light-gray);
   display: none;
   margin-bottom: 0.875rem;
+}
+.nav__content-container__list__page--open {
+  display: block;
 }
 .nav__content-container__list__page--active {
   color: black;
@@ -848,6 +871,11 @@ body {
 .return-top:hover {
   transform: scale(1.1);
 }
+.return-top--clicked {
+  background-color: #004BA8;
+  border: 2px solid black;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
 .return-top__icon {
   color: white;
 }
@@ -861,6 +889,10 @@ body {
     width: 6.25rem;
   }
 }
+.opened {
+  display: flex !important;
+}
+
 .pop-up-modal {
   display: none;
   flex-direction: column;
@@ -886,6 +918,7 @@ body {
   right: 5%;
   top: 1rem;
   color: var(--oxy-blue);
+  cursor: pointer;
 }
 .pop-up-modal__description {
   margin-bottom: 2rem;
@@ -910,6 +943,7 @@ body {
   border: 0;
   padding: 0.5rem 2rem;
   box-shadow: 0.31rem 0.625rem 0.875rem 0rem var(--oxy-blue-shadow);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -952,23 +986,35 @@ body {
   cursor: pointer;
 }
 .pricing__currencies--desktop {
-  display: flex;
+  display: none;
   padding-left: 25%;
   padding-right: 25%;
   justify-content: space-between;
 }
-.pricing__currencies__button {
-  margin-bottom: 3.125rem;
-  color: #08A6E4;
-  background-color: white;
-  padding: 1rem 3.598rem;
-  border: 1px solid #08A6E4;
-  box-shadow: 0.31rem 0.625rem 0.875rem 0rem rgba(7, 172, 230, 0.2901960784);
-  border-radius: 1.438rem;
-  font-family: "Open Sans";
-  cursor: pointer;
+.pricing__currencies--desktop__button {
+  display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  .pricing__currencies--mobile {
+    display: none;
+  }
+  .pricing__currencies--desktop {
+    display: flex;
+  }
+  .pricing__currencies__button {
+    display: block;
+    margin-bottom: 3.125rem;
+    color: #08A6E4;
+    background-color: white;
+    padding: 1rem 3.598rem;
+    border: 1px solid #08A6E4;
+    box-shadow: 0.31rem 0.625rem 0.875rem 0rem rgba(7, 172, 230, 0.2901960784);
+    border-radius: 1.438rem;
+    font-family: "Open Sans";
+    cursor: pointer;
+  }
+}
 .hidden {
   display: none;
 }
