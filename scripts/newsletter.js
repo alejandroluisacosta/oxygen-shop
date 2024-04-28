@@ -58,9 +58,9 @@ newsletterSubmitBtn.addEventListener("click", (event) => {
     const checked = checkValues(nameInput, userName, emailInput, userEmail, checkbox);
     if (checked) {
         submitForm(userName, userEmail);
-        nameInput.style.cssText = "";
-        emailInput.style.cssText = "";
-        checkbox.style.cssText = "";
+        nameInput.classList.remove("input--rejected");
+        emailInput.classList.remove("input--rejected");
+        checkbox.classList.remove("policies-check--rejected");
         nameInput.value = "";
         emailInput.value = "";
         checkbox.checked = false;
