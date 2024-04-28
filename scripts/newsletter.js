@@ -45,7 +45,6 @@ document.addEventListener("keydown", (event) => {
 //     }
 // })
 
-for ()
 
 newsletterSubmitBtn.addEventListener("click", (event) => {
     const nameInput = document.getElementById("newsletterNameInput");

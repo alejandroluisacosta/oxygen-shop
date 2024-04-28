@@ -7,28 +7,26 @@ const closeIcon = document.getElementsByClassName("nav__content-container__close
 
 hamburgerIcon[0].addEventListener("click", () => {
     if (window.innerWidth < 1000) {
-        hamburgerMenu.classList.add("nav--open");
-        header.style.cssText = "padding-top: 10.625rem";
-        logo[0].style.cssText = "display: block; margin-bottom: 2.875rem";
+        hamburgerMenu.classList.toggle("nav--open");
+        header.classList.toggle("header--open");
+        logo[0].classList.toggle("nav__content-container__logo--open");
         Array.from(listPage).forEach(element => {
-            element.style.cssText = "display: block";
+            element.classList.toggle("nav__content-container__list__page--open");
         })
-        hamburgerIcon[0].style.cssText = "display: none; visibility: hidden; opacity: 0";
-        closeIcon[0].style.cssText = "visibility: visible; opacity: 1; position: absolute; right: 1.875rem; top: 1.5rem; color: var(--oxy-light-blue)";
-        hamburgerMenu.classList.toggle("closed");
+        hamburgerIcon[0].classList.toggle("nav__content-container__menu--open");
+        closeIcon[0].classList.toggle("nav__content-container__close--open");
     }
 })
 
 closeIcon[0].addEventListener("click", () => {
     if (window.innerWidth < 1000) {
-        hamburgerMenu.style.cssText = "";
-        header.style.cssText = "";
-        logo[0].style.cssText = "";
+        hamburgerMenu.classList.toggle("nav--open");
+        header.classList.toggle("header--open");
+        logo[0].classList.toggle("nav__content-container__logo--open");
         Array.from(listPage).forEach(element => {
-            element.style.cssText = "";
+            element.classList.toggle("nav__content-container__list__page--open");
         })
-        hamburgerIcon[0].style.cssText = "";
-        closeIcon[0].style.cssText = "";
-        hamburgerMenu.classList.toggle("closed");
+        hamburgerIcon[0].classList.toggle("nav__content-container__menu--open");
+        closeIcon[0].classList.toggle("nav__content-container__close--open");
     }
 })
