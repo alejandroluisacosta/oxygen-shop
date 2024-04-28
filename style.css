@@ -889,6 +889,10 @@ body {
     width: 6.25rem;
   }
 }
+.opened {
+  display: flex !important;
+}
+
 .pop-up-modal {
   display: none;
   flex-direction: column;
@@ -914,6 +918,7 @@ body {
   right: 5%;
   top: 1rem;
   color: var(--oxy-blue);
+  cursor: pointer;
 }
 .pop-up-modal__description {
   margin-bottom: 2rem;
@@ -938,6 +943,7 @@ body {
   border: 0;
   padding: 0.5rem 2rem;
   box-shadow: 0.31rem 0.625rem 0.875rem 0rem var(--oxy-blue-shadow);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1000px) {

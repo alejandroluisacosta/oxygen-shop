@@ -1,3 +1,6 @@
+.opened
+    display: flex !important
+    
 .pop-up-modal
     display: none
     flex-direction: column
@@ -21,6 +24,7 @@
         right: 5%
         top: 1rem
         color: var(--oxy-blue)
+        cursor: pointer
     &__description
         margin-bottom: 2rem
     &__input
@@ -40,6 +44,7 @@
             border: 0
             padding: 0.5rem 2rem
             box-shadow: 0.31rem 0.625rem 0.875rem 0rem var(--oxy-blue-shadow)
+            cursor: pointer
 
 @media only screen and (min-width: 1000px)
     .pop-up-modal
