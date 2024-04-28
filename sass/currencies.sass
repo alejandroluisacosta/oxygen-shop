@@ -17,17 +17,27 @@
         font-family: "Open Sans"
         cursor: pointer
     &--desktop
-        display: flex
+        display: none
         padding-left: 25%
         padding-right: 25%
         justify-content: space-between
-    &__button
-        margin-bottom: 3.125rem
-        color: #08A6E4
-        background-color: white
-        padding: 1rem 3.598rem
-        border: 1px solid #08A6E4
-        box-shadow: 0.31rem 0.625rem 0.875rem 0rem #07ACE64A
-        border-radius: 1.438rem
-        font-family: "Open Sans"
-        cursor: pointer
+        &__button
+            display: none
+
+@media only screen and (min-width: 1000px)
+    .pricing__currencies
+        &--mobile
+            display: none
+        &--desktop
+            display: flex
+        &__button
+            display: block
+            margin-bottom: 3.125rem
+            color: #08A6E4
+            background-color: white
+            padding: 1rem 3.598rem
+            border: 1px solid #08A6E4
+            box-shadow: 0.31rem 0.625rem 0.875rem 0rem #07ACE64A
+            border-radius: 1.438rem
+            font-family: "Open Sans"
+            cursor: pointer

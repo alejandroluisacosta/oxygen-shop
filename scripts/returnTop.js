@@ -1,8 +1,8 @@
 const returnTopBtn = document.getElementById('return-top');
-const body = document.querySelector("body");
+const bodyForReturnTop = document.querySelector("body");
 
 window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop > (body.scrollHeight - window.innerHeight) * 0.25)
+    if (document.documentElement.scrollTop > (bodyForReturnTop.scrollHeight - window.innerHeight) * 0.25)
         returnTopBtn.classList.add("shown");
     else
         returnTopBtn.classList.remove("shown");
